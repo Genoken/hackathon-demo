@@ -141,5 +141,6 @@ Running as a service? `journalctl -u bandaros-demo -f`.
 
 ## Rebuilding `dist/`
 
-`dist/` is committed because it is the deliverable. `build.sh` is how it was
-made, and it needs the source repo and pnpm — neither of which is in here.
+`dist/` is committed because it is the deliverable, not a build output to
+regenerate. Rebuilding it means building the two apps from the source repo and
+bundling the two servers with esbuild.
