@@ -1,0 +1,40 @@
+{
+  "item_id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+  "workflow_key": "council-six-v1",
+  "state": "ASSIGNED",
+  "status_mapping": "pending",
+  "legal_transitions": [
+    "ACKNOWLEDGED",
+    "RESOLVED"
+  ],
+  "routing": {
+    "department_slug": "roads",
+    "confidence": "high",
+    "needs_routing": false,
+    "corrected": false,
+    "agent": {
+      "actor": "svc-routing-agent",
+      "label": "Routing Agent",
+      "mode": "rule",
+      "reasoning": [
+        "type pothole → roads (zone bukit-mertajam rule)",
+        "BM carriageway crew — the Act-1 hero corridor"
+      ]
+    }
+  },
+  "assignment": {
+    "assignee": {
+      "user_id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "name": "Faizal",
+      "department_slug": "roads"
+    },
+    "mode": "rule",
+    "assigned_at": "2026-08-20T04:02:29.795Z"
+  },
+  "sla": {
+    "due_at": "2026-08-22T04:02:26.617Z",
+    "policy_ref": "pothole/resolve",
+    "status": "on_track",
+    "time_to_breach_s": 172796
+  }
+}

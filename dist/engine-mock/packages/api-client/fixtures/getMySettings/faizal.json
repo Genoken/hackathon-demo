@@ -1,0 +1,41 @@
+{
+  "profile": {
+    "name": "Faizal",
+    "email": "faizal@mbpp.demo",
+    "language": "ms-MY",
+    "timezone": "Asia/Kuala_Lumpur",
+    "role": null,
+    "tier": null,
+    "department": null
+  },
+  "availability": {
+    "available_now": true,
+    "master_available": true,
+    "working_hours": null,
+    "leave": null
+  },
+  "appearance": {
+    "theme": "system"
+  },
+  "notifications": {
+    "urgent_alerts": true
+  },
+  "toolbelt": {
+    "pins": []
+  },
+  "capabilities": {
+    "translation": false,
+    "channels": [
+      "manual",
+      "suarakita",
+      "sensor-scada"
+    ],
+    "root_config": false,
+    "modules": [
+      "intake",
+      "org",
+      "triage",
+      "workmgmt"
+    ]
+  }
+}

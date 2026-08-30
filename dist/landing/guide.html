@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#121214" />
+    <title>Demo guide — Majlis Bandaraya Demo</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">&larr; Back</a>
+
+      <div class="mark">
+        <div class="badge">MBD</div>
+        <div><strong>Demo guide</strong><span>RakyatAI · about 10 minutes</span></div>
+      </div>
+
+      <h1>What to click, and what to look for.</h1>
+      <p class="lede">
+        Keep this page open beside the demo. Every step below is one thing to do and one thing
+        to notice.
+      </p>
+
+      <div class="box">
+        <h3>The loop, in one line</h3>
+        <p style="margin:0 0 12px; color:var(--text-2); font-size:14px;">
+          A resident reports a broken street. The council checks it, groups it, and sends it to the
+          right team. A crew fixes it and sends back a photo. Nothing is guessed — a person says yes
+          at every step.
+        </p>
+        <table class="who-table">
+          <tr><td>SuaraKita</td><td>the resident's phone app — where the report starts. Not on this link; you see its reports arrive.</td></tr>
+          <tr><td>Command Centre</td><td>the council's desk. Open it on a computer.</td></tr>
+          <tr><td>Field App</td><td>the crew's phone. Open it on a phone if you can.</td></tr>
+        </table>
+      </div>
+
+      <div class="box">
+        <h3>Who to sign in as</h3>
+        <table class="who-table">
+          <tr><td>aishah@mbpp.demo</td><td>Command Centre — the desk that sorts new reports</td></tr>
+          <tr><td>siti@mbpp.demo</td><td>Command Centre — the roads department</td></tr>
+          <tr><td>ops@mbpp.demo</td><td>Command Centre — the council's admin. Only this one has the Administration menu (Act&nbsp;3).</td></tr>
+          <tr><td>faizal@mbpp.demo</td><td>Field App — Bukit Mertajam crew</td></tr>
+          <tr><td>rizal@mbpp.demo</td><td>Field App — island crew</td></tr>
+          <tr><td>password: demo</td><td>the same for everyone</td></tr>
+        </table>
+      </div>
+
+      <h2 class="act">Act 1 · One pothole, start to end <span class="mins">5 minutes</span></h2>
+      <p class="act-why">Follow one real report from a resident's words to a fixed road.</p>
+      <ol class="steps">
+        <li><b>Open the Command Centre and sign in as Aishah.</b>
+          <em>You land on the Worklist — a full morning of work, in the order it should be done,
+          not the order it arrived.</em></li>
+        <li><b>Open the pothole case at the top.</b>
+          <em>Her own words are kept in Malay, exactly as she wrote them. Nobody rewrote the
+          resident.</em></li>
+        <li><b>Look at "4 reports".</b>
+          <em>Four neighbours reported the same pothole. They are joined into one job — but all four
+          are still there, whole, underneath. Nothing was deleted.</em></li>
+        <li><b>Look at the routing.</b>
+          <em>The system names a person and says why: who is nearest, who is free. It proposes.
+          The officer confirms.</em></li>
+        <li><b>Look at the Record on the right.</b>
+          <em>Every step so far, in order. Lines can only be added, never edited away.</em></li>
+        <li><b>Open the Field App and sign in as Faizal.</b>
+          <em>The same job is now on the crew's phone.</em></li>
+        <li><b>Tap the job, change the status, then Close job.</b>
+          <em>A job is closed with a photo and a remark, not a tick box. That is the proof the
+          council keeps.</em></li>
+        <li><b>Go back to the case in the Command Centre.</b>
+          <em>The Record grew. Faizal's words and his photo are on it.</em></li>
+      </ol>
+
+      <h2 class="act">Act 2 · A storm <span class="mins">2 minutes</span></h2>
+      <p class="act-why">One report is easy. A rainy morning across the whole city is the real job.</p>
+      <ol class="steps">
+        <li><b>Look at the whole Worklist.</b>
+          <em>20 reports and sensor alarms came in that morning. 4 real problems came out.
+          4 were refused — spam, or another council's street.</em></li>
+        <li><b>Open Review.</b>
+          <em>Proposals waiting for a person: "these two look like the same flood — medium
+          confidence." You can accept it, keep them apart, or mark it not real.</em></li>
+        <li><b>Notice what it does not do.</b>
+          <em>It never merges on its own. Every group waited for a human yes.</em></li>
+      </ol>
+
+      <h2 class="act">Act 3 · Look inside the box <span class="mins">3 minutes</span></h2>
+      <p class="act-why">The honest half: what the machine did, what a person decided, and what a
+        council can change without us.</p>
+      <ol class="steps">
+        <li><b>On a case, open Under the hood.</b>
+          <em>The case played back step by step. Where nothing was recorded, it says so instead of
+          filling in a guess.</em></li>
+        <li><b>Read the Record in full.</b>
+          <em>16 entries for this one case. A council can put this in front of an auditor.</em></li>
+        <li><b>Sign in again as Ops, then open Administration &rarr; Event types &amp; routing.</b>
+          <em>It asks for the password once more (<b>demo</b>) before it lets you in — settings
+          change the council for everyone, so it confirms who you are twice.</em></li>
+        <li><b>Read the routing rules.</b>
+          <em>The kinds of problem this council handles, and which department gets each one.
+          Adding the next council is settings, not new code.</em></li>
+        <li><b>Administration &rarr; Change history.</b>
+          <em>Who changed which setting, and what it was before. Even the settings have a paper
+          trail.</em></li>
+        <li><b>Add a report manually.</b>
+          <em>A phone call or a walk-in goes into the same queue. Nothing here needs the resident to
+          own a smartphone.</em></li>
+      </ol>
+
+      <div class="box">
+        <h3>What is real, and what is not</h3>
+        <ul class="plain">
+          <li>The screens are the real product, running the real council app.</li>
+          <li>The data is a real run of the engine, recorded on 20 August 2026. You are seeing the
+            answers it gave that morning, not new ones.</li>
+          <li>Nothing here calls a live AI, and no real resident's data is in it. Every report was
+            written for this demo.</li>
+          <li>Sign-in does not check your password. It is a demo, not a live system.</li>
+          <li>The resident's app, SuaraKita, is not part of this link. Its side of the story is the
+            reports you see arriving.</li>
+        </ul>
+      </div>
+
+      <div class="open">
+        <a href="__PORTAL_URL__">Open the Command Centre &rarr;</a>
+        <a href="__FIELD_URL__">Open the Field App &rarr;</a>
+      </div>
+    </main>
+  </body>
+</html>

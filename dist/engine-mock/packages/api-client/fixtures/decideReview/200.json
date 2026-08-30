@@ -1,0 +1,11 @@
+{
+  "signal_state": {
+    "signal_id": "01a01d55-a5fa-7b34-b574-98f5d551ee4a",
+    "disposition": "attached",
+    "incident_id": "85cce6ed-fed6-4454-8af5-ea9c7971d599",
+    "band": "medium",
+    "score": 0.9118944980197612,
+    "decided_by": "01a01d55-a180-758b-84e2-df5075f87cab",
+    "decided_at": "2026-08-20T04:02:29.336000Z"
+  }
+}

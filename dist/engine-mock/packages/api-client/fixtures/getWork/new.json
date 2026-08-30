@@ -1,0 +1,22 @@
+{
+  "item_id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+  "workflow_key": "council-six-v1",
+  "state": "NEW",
+  "status_mapping": "pending",
+  "legal_transitions": [
+    "ROUTED",
+    "RESOLVED"
+  ],
+  "routing": {
+    "department_slug": null,
+    "confidence": null,
+    "needs_routing": false,
+    "corrected": false
+  },
+  "assignment": {
+    "assignee": null,
+    "mode": null,
+    "assigned_at": null
+  },
+  "sla": null
+}

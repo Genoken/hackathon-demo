@@ -1,0 +1,254 @@
+{
+  "entries": [
+    {
+      "seq": 1,
+      "type": "item.created",
+      "actor": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+      "at": "2026-08-20T04:02:26.568000Z",
+      "payload": {
+        "title": "Lubang jalan berhampiran pasar",
+        "due_at": "2026-08-22",
+        "labels": [],
+        "source": "suarakita",
+        "arrived_at": "2026-08-20T04:02:26.563000Z",
+        "priority_band": 2,
+        "description_lang": null,
+        "description_sha256": null
+      },
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "9c31a8f3a9d41c8e7e3f8c4489712f04388d03a2922305e173d83193efcb4937"
+    },
+    {
+      "seq": 2,
+      "type": "triage.incident_opened",
+      "actor": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+      "at": "2026-08-20T04:02:26.571000Z",
+      "payload": {
+        "band": "low",
+        "score": 0,
+        "signals": [
+          {
+            "media": [],
+            "channel": "suarakita",
+            "signal_id": "01a01d55-a249-7641-ab3b-a667d5eac61d",
+            "source_class": "citizen",
+            "envelope_sha256": "f199788a6fe829bc735fca85ae731253391f788eb35e6716930c558a7748fd36"
+          }
+        ]
+      },
+      "prev_hash": "9c31a8f3a9d41c8e7e3f8c4489712f04388d03a2922305e173d83193efcb4937",
+      "hash": "f758297b41c9d2e144d5b16f2699b10d13b50115d1bcd6d6212d4f4ad6259c01"
+    },
+    {
+      "seq": 3,
+      "type": "triage.signal_attached",
+      "actor": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+      "at": "2026-08-20T04:02:26.680000Z",
+      "payload": {
+        "band": "high",
+        "score": 0.8493308483551296,
+        "channel": "suarakita",
+        "signal_id": "01a01d55-a2d7-7d01-b239-ce19d0f54caf",
+        "media_sha256s": [],
+        "envelope_sha256": "92d51e20765660e0bfb97f347c8d6abef250a08cd7d7a095332179db1d5dad26"
+      },
+      "prev_hash": "f758297b41c9d2e144d5b16f2699b10d13b50115d1bcd6d6212d4f4ad6259c01",
+      "hash": "db66f24b561c50635ca5d861741009789454bbfaba0218f8100771d8ff90727f"
+    },
+    {
+      "seq": 4,
+      "type": "triage.signal_attached",
+      "actor": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+      "at": "2026-08-20T04:02:26.755000Z",
+      "payload": {
+        "band": "high",
+        "score": 0.8512080271229515,
+        "channel": "suarakita",
+        "signal_id": "01a01d55-a321-7ab3-a17c-f70a05d03efd",
+        "media_sha256s": [],
+        "envelope_sha256": "c1afc57657a13a82d4044dfdef97864676c09ed3bd68803abeaff2434a45ed51"
+      },
+      "prev_hash": "db66f24b561c50635ca5d861741009789454bbfaba0218f8100771d8ff90727f",
+      "hash": "5ab27f2fbecb2cc0a89abdd603d97a072bc7c0333d6d91ae11eecb8b8a5d8e87"
+    },
+    {
+      "seq": 5,
+      "type": "triage.signal_attached",
+      "actor": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+      "at": "2026-08-20T04:02:26.847000Z",
+      "payload": {
+        "band": "high",
+        "score": 0.8237559862915778,
+        "channel": "suarakita",
+        "signal_id": "01a01d55-a383-7d14-b198-d2c0f0d2697a",
+        "media_sha256s": [],
+        "envelope_sha256": "6d74b824376f4ac2c67c9f9c4c6eff124a4eb83a7ed498d1a48413c54535590f"
+      },
+      "prev_hash": "5ab27f2fbecb2cc0a89abdd603d97a072bc7c0333d6d91ae11eecb8b8a5d8e87",
+      "hash": "d32709183d5fb857df030b01631b5aa91daeb7dccb8967152ae7d149a0a8f47f"
+    },
+    {
+      "seq": 6,
+      "type": "triage.verify_confirmed",
+      "actor": "01a01d55-a180-758b-84e2-df5075f87cab",
+      "at": "2026-08-20T04:02:29.612000Z",
+      "payload": {
+        "verdict": "confirmed",
+        "confirmed_by": "01a01d55-a180-758b-84e2-df5075f87cab"
+      },
+      "prev_hash": "d32709183d5fb857df030b01631b5aa91daeb7dccb8967152ae7d149a0a8f47f",
+      "hash": "139f3c305eb1a939a314ace602bb02844ae4ad9bd6c5a378b7fac517b8a10768"
+    },
+    {
+      "seq": 7,
+      "type": "workmgmt.sla_set",
+      "actor": "01a01d55-9d06-78c6-9551-e3f37b94291f",
+      "at": "2026-08-20T04:02:29.634000Z",
+      "payload": {
+        "due_at": "2026-08-22T04:02:26.617Z",
+        "policy_ref": "pothole/resolve"
+      },
+      "prev_hash": "139f3c305eb1a939a314ace602bb02844ae4ad9bd6c5a378b7fac517b8a10768",
+      "hash": "ba8f5905308e363f27c29c13e26ec78671b70c53fa20808b0b226dd4d690e2fa"
+    },
+    {
+      "seq": 8,
+      "type": "workmgmt.routed",
+      "actor": "01a01d55-9d06-78c6-9551-e3f37b94291f",
+      "at": "2026-08-20T04:02:29.651000Z",
+      "payload": {
+        "mode": "rule",
+        "corrected": false,
+        "reasoning": [
+          "type pothole → roads (zone bukit-mertajam rule)",
+          "BM carriageway crew — the Act-1 hero corridor"
+        ],
+        "confidence": "high",
+        "department_slug": "roads"
+      },
+      "prev_hash": "ba8f5905308e363f27c29c13e26ec78671b70c53fa20808b0b226dd4d690e2fa",
+      "hash": "038cfe46a8140a6afe363c16c5c8ba31a42def6a4172fa92cdd30399aaba079d"
+    },
+    {
+      "seq": 9,
+      "type": "workmgmt.state_changed",
+      "actor": "01a01d55-9d06-78c6-9551-e3f37b94291f",
+      "at": "2026-08-20T04:02:29.659000Z",
+      "payload": {
+        "to": "ROUTED",
+        "from": "NEW",
+        "workflow_key": "council-six-v1"
+      },
+      "prev_hash": "038cfe46a8140a6afe363c16c5c8ba31a42def6a4172fa92cdd30399aaba079d",
+      "hash": "c2c0cca9b20e1fb5de5fbc27d37ad7fbbdf1a87ad0654fc084d5a648234d82d0"
+    },
+    {
+      "seq": 10,
+      "type": "workmgmt.state_changed",
+      "actor": "01a01d55-a180-758b-84e2-df5075f87cab",
+      "at": "2026-08-20T04:02:29.803000Z",
+      "payload": {
+        "to": "ASSIGNED",
+        "from": "ROUTED",
+        "workflow_key": "council-six-v1"
+      },
+      "prev_hash": "c2c0cca9b20e1fb5de5fbc27d37ad7fbbdf1a87ad0654fc084d5a648234d82d0",
+      "hash": "11fe358fd9acb678d607668578873358965c3f30e9706d56b503ded40cba80d9"
+    },
+    {
+      "seq": 11,
+      "type": "workmgmt.assigned",
+      "actor": "01a01d55-a180-758b-84e2-df5075f87cab",
+      "at": "2026-08-20T04:02:29.807000Z",
+      "payload": {
+        "mode": "rule",
+        "factors": [
+          "available now",
+          "0 open items",
+          "never assigned — first in the round robin",
+          "home base bukit-mertajam — same zone as the item",
+          "the operator named this assignee, so the record claims no model contribution — 07 §4.4 carries no reference to the ranking the pick came from (08 §5b step 3, D5)"
+        ],
+        "assignee_ref": {
+          "name": "Faizal",
+          "user_id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+          "department_slug": "roads"
+        }
+      },
+      "prev_hash": "11fe358fd9acb678d607668578873358965c3f30e9706d56b503ded40cba80d9",
+      "hash": "ded14c941206cf5fa1ef4e5a1c2623ea00137ebd3d75661706685050527f74b3"
+    },
+    {
+      "seq": 12,
+      "type": "comment.added",
+      "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "at": "2026-08-20T04:02:29.860000Z",
+      "payload": {
+        "comment_id": "01a01d55-af64-75a9-9b2d-455980b220a1",
+        "attachments": [],
+        "body_sha256": "0c84d306f7c31edd20cf6028332a3199bcf41cc162510f2ac332a10db256b4c9"
+      },
+      "prev_hash": "ded14c941206cf5fa1ef4e5a1c2623ea00137ebd3d75661706685050527f74b3",
+      "hash": "a6a83156f1af108f174cbc9c8b4bb529881baac726a2dbbfad8f87cc8b6af6f6"
+    },
+    {
+      "seq": 13,
+      "type": "workmgmt.state_changed",
+      "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "at": "2026-08-20T04:02:29.904000Z",
+      "payload": {
+        "to": "ACKNOWLEDGED",
+        "from": "ASSIGNED",
+        "workflow_key": "council-six-v1"
+      },
+      "prev_hash": "a6a83156f1af108f174cbc9c8b4bb529881baac726a2dbbfad8f87cc8b6af6f6",
+      "hash": "d6fc9693678e88ca673e3b4d841c5ebf62ee96c5dbd62ad14e60f0b048e1a034"
+    },
+    {
+      "seq": 14,
+      "type": "workmgmt.state_changed",
+      "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "at": "2026-08-20T04:02:29.948000Z",
+      "payload": {
+        "to": "IN_PROGRESS",
+        "from": "ACKNOWLEDGED",
+        "workflow_key": "council-six-v1"
+      },
+      "prev_hash": "d6fc9693678e88ca673e3b4d841c5ebf62ee96c5dbd62ad14e60f0b048e1a034",
+      "hash": "e6dc1b478089ca514b20bd688cbb6d0cee7f1ee163642fa5c34e0708f47d1596"
+    },
+    {
+      "seq": 15,
+      "type": "item.resolved",
+      "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "at": "2026-08-20T04:02:30.038000Z",
+      "payload": {
+        "reason": null,
+        "remark": "Pothole patched and made safe.",
+        "evidence": [
+          {
+            "kind": "file",
+            "sha256": "1bfb8a959c717eba0833642ee4e695416436d43268e2c1197486107baa0e5f54",
+            "attachment_id": "01a01d55-affc-7ffb-8c75-9ea3f5fdf4ec"
+          }
+        ]
+      },
+      "prev_hash": "e6dc1b478089ca514b20bd688cbb6d0cee7f1ee163642fa5c34e0708f47d1596",
+      "hash": "100e729108735d3382c8a6677432316fd83444fccb9b58bd9c114fc32d336d77"
+    },
+    {
+      "seq": 16,
+      "type": "workmgmt.state_changed",
+      "actor": "01a01d55-9d06-78c6-9551-e3f37b94291f",
+      "at": "2026-08-20T04:02:30.057000Z",
+      "payload": {
+        "to": "RESOLVED",
+        "from": "IN_PROGRESS",
+        "workflow_key": "council-six-v1"
+      },
+      "prev_hash": "100e729108735d3382c8a6677432316fd83444fccb9b58bd9c114fc32d336d77",
+      "hash": "3d8c076cec5b1b46cf8452d33c51d7e50a255f16e07ed86c3184962956a4c4c7"
+    }
+  ],
+  "next_cursor": null
+}

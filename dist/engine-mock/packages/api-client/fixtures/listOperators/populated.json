@@ -1,0 +1,44 @@
+{
+  "operators": [
+    {
+      "id": "01a01d55-a0e7-7b52-9a39-08f522fe6645",
+      "name": "Founder",
+      "email": "founder@mbpp.demo",
+      "kind": "human",
+      "is_root_capable": true,
+      "disabled_at": null
+    },
+    {
+      "id": "01a01d55-a180-758b-84e2-df5075f87cab",
+      "name": "Aishah",
+      "email": "aishah@mbpp.demo",
+      "kind": "human",
+      "is_root_capable": false,
+      "disabled_at": null
+    },
+    {
+      "id": "01a01d55-a184-74d2-b425-2b1ee4a4c6af",
+      "name": "Siti",
+      "email": "siti@mbpp.demo",
+      "kind": "human",
+      "is_root_capable": false,
+      "disabled_at": null
+    },
+    {
+      "id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "name": "Faizal",
+      "email": "faizal@mbpp.demo",
+      "kind": "human",
+      "is_root_capable": false,
+      "disabled_at": null
+    },
+    {
+      "id": "01a01d55-a189-732e-b401-7b95db938bae",
+      "name": "Rizal",
+      "email": "rizal@mbpp.demo",
+      "kind": "human",
+      "is_root_capable": false,
+      "disabled_at": null
+    }
+  ]
+}

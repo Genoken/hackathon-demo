@@ -1,0 +1,13 @@
+{
+  "session_id": "V_Fsoyi1U5TU7HviAawVeMMEebu6ikDls2vkzy3sd8w",
+  "expires_at": "2026-08-11T05:22:14.905000Z",
+  "user": {
+    "id": "019fec99-6a35-79ff-91c2-336675d33d3b",
+    "kind": "human",
+    "name": "MBPP Ops",
+    "email": "ops@mbpp.demo",
+    "language": "en",
+    "timezone": "Asia/Kuala_Lumpur",
+    "is_root_capable": true
+  }
+}

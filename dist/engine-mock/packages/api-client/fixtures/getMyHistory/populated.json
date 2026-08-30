@@ -1,0 +1,17 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "item_id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+      "intake_seq": 1,
+      "title": "Lubang jalan berhampiran pasar",
+      "priority_band": "P2",
+      "labels": [],
+      "closed_at": "2026-08-20T04:02:30.038000Z",
+      "remark": "Pothole patched and made safe.",
+      "has_media_proof": true,
+      "date_group": "today"
+    }
+  ],
+  "next_cursor": null
+}

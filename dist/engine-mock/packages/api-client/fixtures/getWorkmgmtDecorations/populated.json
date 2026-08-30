@@ -1,0 +1,51 @@
+{
+  "01a01d55-a283-7ae2-bd6f-690c241f8a7b": {
+    "state": "NEW",
+    "status_mapping": "pending",
+    "department_slug": null,
+    "assignee": null,
+    "sla": null,
+    "needs_routing": false
+  },
+  "01a01d55-a701-7f1a-8789-f380f5f988d0": {
+    "state": "NEW",
+    "status_mapping": "pending",
+    "department_slug": null,
+    "assignee": null,
+    "sla": null,
+    "needs_routing": true
+  },
+  "01a01d55-a3e9-707e-adbc-dc43bfec4b60": {
+    "state": "ROUTED",
+    "status_mapping": "pending",
+    "department_slug": "drainage",
+    "assignee": null,
+    "sla": {
+      "due_at": "2026-08-20T08:02:26.954Z",
+      "status": "on_track"
+    },
+    "needs_routing": false
+  },
+  "01a01d55-a654-7a32-b758-84aa56704ffc": {
+    "state": "ROUTED",
+    "status_mapping": "pending",
+    "department_slug": "lighting",
+    "assignee": null,
+    "sla": {
+      "due_at": "2026-08-21T04:02:27.566Z",
+      "status": "on_track"
+    },
+    "needs_routing": false
+  },
+  "01a01d55-a7c3-759a-a9fc-729ae2a873f2": {
+    "state": "IN_PROGRESS",
+    "status_mapping": "pending",
+    "department_slug": "roads",
+    "assignee": {
+      "user_id": "01a01d55-a189-732e-b401-7b95db938bae",
+      "name": "Rizal"
+    },
+    "sla": null,
+    "needs_routing": false
+  }
+}

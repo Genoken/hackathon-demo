@@ -1,0 +1,61 @@
+{
+  "incident_id": "1bf4cc57-812c-4f99-baee-a6e89aea15c7",
+  "item_id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+  "affected_count": 3,
+  "sensor_corroborated": false,
+  "verification": null,
+  "opened_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+  "opened_at": "2026-08-20T04:02:26.617000Z",
+  "snapshot": {
+    "type_id": "pothole",
+    "category": "roads",
+    "anchor": {
+      "lat": 5.3639,
+      "lng": 100.4666
+    },
+    "asset_ref": null,
+    "asset_class": null
+  },
+  "signals": [
+    {
+      "signal_id": "01a01d55-a249-7641-ab3b-a667d5eac61d",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F01",
+      "source_class": "citizen",
+      "band": "low",
+      "score": 0,
+      "decided_at": "2026-08-20T04:02:26.620000Z",
+      "decided_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+    },
+    {
+      "signal_id": "01a01d55-a2d7-7d01-b239-ce19d0f54caf",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F02",
+      "source_class": "citizen",
+      "band": "high",
+      "score": 0.8493308483551296,
+      "decided_at": "2026-08-20T04:02:26.685000Z",
+      "decided_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+    },
+    {
+      "signal_id": "01a01d55-a321-7ab3-a17c-f70a05d03efd",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F03",
+      "source_class": "citizen",
+      "band": "high",
+      "score": 0.8512080271229515,
+      "decided_at": "2026-08-20T04:02:26.762000Z",
+      "decided_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+    },
+    {
+      "signal_id": "01a01d55-a383-7d14-b198-d2c0f0d2697a",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F04",
+      "source_class": "citizen",
+      "band": "high",
+      "score": 0.8237559862915778,
+      "decided_at": "2026-08-20T04:02:26.850000Z",
+      "decided_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+    }
+  ]
+}

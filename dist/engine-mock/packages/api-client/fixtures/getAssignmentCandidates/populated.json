@@ -1,0 +1,56 @@
+{
+  "mode": "rule",
+  "candidates": [
+    {
+      "user_id": "01a01d55-a184-74d2-b425-2b1ee4a4c6af",
+      "name": "Siti",
+      "department_slug": "roads",
+      "available_now": true,
+      "open_items": 0,
+      "rank": 1,
+      "factors": [
+        "available now",
+        "0 open items",
+        "never assigned — first in the round robin"
+      ]
+    },
+    {
+      "user_id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "name": "Faizal",
+      "department_slug": "roads",
+      "available_now": true,
+      "open_items": 0,
+      "rank": 2,
+      "factors": [
+        "available now",
+        "0 open items",
+        "never assigned — first in the round robin",
+        "home base bukit-mertajam — same zone as the item"
+      ]
+    },
+    {
+      "user_id": "01a01d55-a189-732e-b401-7b95db938bae",
+      "name": "Rizal",
+      "department_slug": "roads",
+      "available_now": true,
+      "open_items": 1,
+      "rank": 3,
+      "factors": [
+        "available now",
+        "1 open item",
+        "last assigned 2026-08-20 12:02:29.029+08",
+        "home base island — travel from the item's bukit-mertajam"
+      ]
+    }
+  ],
+  "agent": {
+    "actor": "svc-assignment-agent",
+    "label": "Assignment Agent",
+    "mode": "rule",
+    "reasoning": [
+      "candidates from roads via DirectoryProvider",
+      "ranked by availability, round-robin recency, then open load (08 §5a)",
+      "no LlmProvider with a rank seam is bound, so the rule path IS the step (08 §5 degrade, D5)"
+    ]
+  }
+}

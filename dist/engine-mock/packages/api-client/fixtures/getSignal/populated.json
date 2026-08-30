@@ -1,0 +1,108 @@
+{
+  "id": "01a01d55-a249-7641-ab3b-a667d5eac61d",
+  "channel": "suarakita",
+  "source_ref": "bandaros-demo-F01",
+  "source_class": "citizen",
+  "observed_at": null,
+  "received_at": "2026-08-20T04:02:26.505000Z",
+  "title": "Lubang jalan berhampiran pasar",
+  "language": "ms",
+  "location": {
+    "lat": 5.3639,
+    "lng": 100.4666
+  },
+  "storm_flag": false,
+  "media_count": 0,
+  "enrichment": {
+    "type_id": "pothole",
+    "category": "roads",
+    "severity_hint": "P2",
+    "in_jurisdiction": true,
+    "zone_id": "bukit-mertajam",
+    "agent": {
+      "actor": "svc-jurisdiction-agent",
+      "label": "Jurisdiction Agent",
+      "mode": "rule",
+      "reasoning": [
+        "point-in-polygon: mbpp-boundary → bukit-mertajam"
+      ]
+    },
+    "asset_ref": null,
+    "geocode": {
+      "lat": 5.3639,
+      "lng": 100.4666,
+      "source": "envelope",
+      "refined": false
+    },
+    "detail": {
+      "agent": {
+        "mode": "rule",
+        "actor": "svc-jurisdiction-agent",
+        "label": "Jurisdiction Agent",
+        "reasoning": [
+          "point-in-polygon: mbpp-boundary → bukit-mertajam"
+        ]
+      },
+      "media": [
+        {
+          "detail": "no ChannelAdapter in this composition exposes a media fetch for this channel; the ref stays at rest in the immutable archive (ADR-004 §4.2, IN-F-006)",
+          "outcome": "no_media_seam",
+          "media_ref": "bandaros-demo-F01-photo"
+        }
+      ],
+      "steps": [
+        {
+          "mode": "rule",
+          "step": "classify",
+          "reasoning": [
+            "hint map [rule]: \"pothole\" → type pothole",
+            "taxonomy category: roads"
+          ]
+        },
+        {
+          "mode": "rule",
+          "step": "geolocate",
+          "reasoning": [
+            "coordinates normalised from the envelope; no geocoder bound, so nothing is refined"
+          ]
+        },
+        {
+          "mode": "rule",
+          "step": "jurisdiction",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        },
+        {
+          "mode": "rule",
+          "step": "severity_hint",
+          "reasoning": [
+            "type pothole default priority P2"
+          ]
+        },
+        {
+          "mode": "rule",
+          "step": "asset_link",
+          "reasoning": [
+            "no configured asset service area contains this point (a bridge, not a magnet)"
+          ]
+        }
+      ],
+      "version": 1
+    }
+  },
+  "body": "Kluster lubang di Jalan Pasar Bukit Mertajam, bahaya untuk motosikal.",
+  "reporter": {
+    "identity_tier": "disclosed",
+    "consent": {
+      "status_updates": true
+    }
+  },
+  "entered_by": null,
+  "structured": {
+    "type_hint": "pothole",
+    "citizen_priority_score": 0.6,
+    "voice_count": 1
+  },
+  "media": []
+}

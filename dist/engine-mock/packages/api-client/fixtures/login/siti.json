@@ -1,0 +1,13 @@
+{
+  "session_id": "1cdAjlUv1rBml9z-W7eLvJV0xcztjDjVCZ_7ogEToOw",
+  "expires_at": "2026-08-20T16:02:28.388000Z",
+  "user": {
+    "id": "01a01d55-a184-74d2-b425-2b1ee4a4c6af",
+    "kind": "human",
+    "name": "Siti",
+    "email": "siti@mbpp.demo",
+    "language": "ms-MY",
+    "timezone": "Asia/Kuala_Lumpur",
+    "is_root_capable": false
+  }
+}

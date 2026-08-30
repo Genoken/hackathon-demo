@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "ITEM_NOT_FOUND",
+    "message": "No such item."
+  }
+}

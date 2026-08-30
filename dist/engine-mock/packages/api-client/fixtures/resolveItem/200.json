@@ -1,0 +1,53 @@
+{
+  "item": {
+    "id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+    "intake_seq": 1,
+    "title": "Lubang jalan berhampiran pasar",
+    "description": {
+      "body": null,
+      "language": null,
+      "structured_fields": null
+    },
+    "source": {
+      "channel": "suarakita",
+      "created_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+    },
+    "status": "resolved",
+    "stage": "close",
+    "priority_band": "P2",
+    "due_at": "2026-08-22",
+    "labels": [],
+    "arrived_at": "2026-08-20T04:02:26.563000Z",
+    "created_at": "2026-08-20T04:02:26.563000Z",
+    "updated_at": "2026-08-20T04:02:30.038000Z",
+    "close_record": {
+      "closed_by": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "closed_at": "2026-08-20T04:02:30.038000Z",
+      "remark": "Pothole patched and made safe.",
+      "proof_attachment_ids": [
+        "01a01d55-affc-7ffb-8c75-9ea3f5fdf4ec"
+      ],
+      "reason": null,
+      "evidence_type": null
+    }
+  },
+  "timeline_entry": {
+    "seq": 15,
+    "type": "item.resolved",
+    "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+    "at": "2026-08-20T04:02:30.038000Z",
+    "payload": {
+      "reason": null,
+      "remark": "Pothole patched and made safe.",
+      "evidence": [
+        {
+          "kind": "file",
+          "sha256": "1bfb8a959c717eba0833642ee4e695416436d43268e2c1197486107baa0e5f54",
+          "attachment_id": "01a01d55-affc-7ffb-8c75-9ea3f5fdf4ec"
+        }
+      ]
+    },
+    "prev_hash": "e6dc1b478089ca514b20bd688cbb6d0cee7f1ee163642fa5c34e0708f47d1596",
+    "hash": "100e729108735d3382c8a6677432316fd83444fccb9b58bd9c114fc32d336d77"
+  }
+}

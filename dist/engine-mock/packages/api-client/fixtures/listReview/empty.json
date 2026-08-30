@@ -1,0 +1,47 @@
+{
+  "suggestions": [
+    {
+      "signal": {
+        "id": "01a01d55-a72e-7676-8ee3-e122106e17a4",
+        "channel": "suarakita",
+        "source_class": "citizen",
+        "title": "Sampah besar tepi lorong",
+        "received_at": "2026-08-20T04:02:27.758001Z",
+        "location": {
+          "lat": 5.345543,
+          "lng": 100.480478
+        },
+        "media_count": 0,
+        "type_id": null,
+        "category": "holding"
+      },
+      "suggested_incident": {
+        "incident_id": "6dbd866f-6ab4-4d70-9059-e2bf45983bd4",
+        "item_id": "01a01d55-a701-7f1a-8789-f380f5f988d0",
+        "item_title": "Old furniture dumped by the road",
+        "affected_count": 1
+      },
+      "band": "medium",
+      "score": 0.6654672805784969,
+      "score_breakdown": {
+        "spatial": 0.2904673717243303,
+        "temporal": 0.3749999088541667,
+        "semantic": null,
+        "asset": null
+      },
+      "trust_gate": null,
+      "agent": {
+        "actor": "svc-correlate-agent",
+        "label": "Dedup/Correlate Agent",
+        "mode": "rule",
+        "reasoning": [
+          "spatial 0.29 within the 150 m category radius",
+          "temporal 0.37 inside the 24h window",
+          "the semantic component does not exist for this pair — no LlmProvider answered — so its weight renormalised away (08 §2.1.4)"
+        ]
+      }
+    }
+  ],
+  "next_cursor": null,
+  "queue_total": 1
+}

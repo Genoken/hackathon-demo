@@ -1,0 +1,20 @@
+{
+  "sessions": [
+    {
+      "id": "01a01d55-a96d-78f3-961e-bb97a092dcbd",
+      "created_at": "2026-08-20T04:02:28.333000Z",
+      "last_seen_at": "2026-08-20T04:02:28.490000Z",
+      "expires_at": "2026-08-20T16:02:28.490000Z",
+      "root_elevated": false,
+      "current": true
+    },
+    {
+      "id": "01a01d55-a221-7b89-93fe-8607dad5eb1b",
+      "created_at": "2026-08-20T04:02:26.465000Z",
+      "last_seen_at": "2026-08-20T04:02:28.235000Z",
+      "expires_at": "2026-08-20T16:02:28.235000Z",
+      "root_elevated": false,
+      "current": false
+    }
+  ]
+}

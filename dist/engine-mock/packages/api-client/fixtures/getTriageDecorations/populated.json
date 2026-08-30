@@ -1,0 +1,39 @@
+{
+  "01a01d55-a283-7ae2-bd6f-690c241f8a7b": {
+    "incident_id": "1bf4cc57-812c-4f99-baee-a6e89aea15c7",
+    "band": "high",
+    "affected_count": 3,
+    "sensor_corroborated": false,
+    "verify": null
+  },
+  "01a01d55-a654-7a32-b758-84aa56704ffc": {
+    "incident_id": "2087424a-7c63-4365-8c34-50cb05a8bcf0",
+    "band": "high",
+    "affected_count": 2,
+    "sensor_corroborated": false,
+    "verify": {
+      "state": "confirmed",
+      "labels": []
+    }
+  },
+  "01a01d55-a701-7f1a-8789-f380f5f988d0": {
+    "incident_id": "6dbd866f-6ab4-4d70-9059-e2bf45983bd4",
+    "band": "low",
+    "affected_count": 1,
+    "sensor_corroborated": false,
+    "verify": {
+      "state": "confirmed",
+      "labels": []
+    }
+  },
+  "01a01d55-a3e9-707e-adbc-dc43bfec4b60": {
+    "incident_id": "85cce6ed-fed6-4454-8af5-ea9c7971d599",
+    "band": "high",
+    "affected_count": 3,
+    "sensor_corroborated": true,
+    "verify": {
+      "state": "confirmed",
+      "labels": []
+    }
+  }
+}

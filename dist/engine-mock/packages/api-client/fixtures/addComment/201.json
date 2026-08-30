@@ -1,0 +1,23 @@
+{
+  "comment": {
+    "id": "01a01d55-af64-75a9-9b2d-455980b220a1",
+    "author": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+    "body": "Crew dispatched this morning — ETA 2 hours.",
+    "attachments": [],
+    "created_at": "2026-08-20T04:02:29.860000Z",
+    "timeline_seq": 12
+  },
+  "timeline_entry": {
+    "seq": 12,
+    "type": "comment.added",
+    "actor": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+    "at": "2026-08-20T04:02:29.860000Z",
+    "payload": {
+      "comment_id": "01a01d55-af64-75a9-9b2d-455980b220a1",
+      "attachments": [],
+      "body_sha256": "0c84d306f7c31edd20cf6028332a3199bcf41cc162510f2ac332a10db256b4c9"
+    },
+    "prev_hash": "ded14c941206cf5fa1ef4e5a1c2623ea00137ebd3d75661706685050527f74b3",
+    "hash": "a6a83156f1af108f174cbc9c8b4bb529881baac726a2dbbfad8f87cc8b6af6f6"
+  }
+}

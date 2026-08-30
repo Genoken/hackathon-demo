@@ -1,0 +1,619 @@
+{
+  "signals": [
+    {
+      "id": "01a01d55-a7a7-727d-be58-c4fb0e680179",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F20",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.879001Z",
+      "title": "Illegal parking in Kulim",
+      "language": "en",
+      "location": {
+        "lat": 5.365,
+        "lng": 100.56
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": null,
+        "category": "holding",
+        "severity_hint": null,
+        "in_jurisdiction": false,
+        "zone_id": null,
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → outside"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a78d-7377-92c5-da3fde1198b6",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F19",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.853001Z",
+      "title": "Jalan berlubang di Seberang Perai",
+      "language": "ms",
+      "location": {
+        "lat": 5.3,
+        "lng": 100.53
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "pothole",
+        "category": "roads",
+        "severity_hint": "P2",
+        "in_jurisdiction": false,
+        "zone_id": null,
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → outside"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a770-7aeb-b17c-ba5193dbc972",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F18",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.824000Z",
+      "title": "Cat sleeping on the roof",
+      "language": "en",
+      "location": null,
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": null,
+        "category": "holding",
+        "severity_hint": null,
+        "in_jurisdiction": null,
+        "zone_id": null,
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "not evaluated: the signal is unlocatable"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a751-75f2-a244-ba658a76a94f",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F17",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.793000Z",
+      "title": "PROMO hebat hari ini",
+      "language": "ms",
+      "location": null,
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": null,
+        "category": "holding",
+        "severity_hint": null,
+        "in_jurisdiction": null,
+        "zone_id": null,
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "not evaluated: the signal is unlocatable"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a72e-7676-8ee3-e122106e17a4",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F16",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.758001Z",
+      "title": "Sampah besar tepi lorong",
+      "language": "ms",
+      "location": {
+        "lat": 5.345543,
+        "lng": 100.480478
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": null,
+        "category": "holding",
+        "severity_hint": null,
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a6c8-7b7c-a4af-9afb98fa8be4",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F15",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.656001Z",
+      "title": "Old furniture dumped by the road",
+      "language": "en",
+      "location": {
+        "lat": 5.345,
+        "lng": 100.48
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": null,
+        "category": "holding",
+        "severity_hint": null,
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a68f-72ce-8f36-f04dc5a1209c",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F14",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.599001Z",
+      "title": "Lampu jalan rosak",
+      "language": "ms",
+      "location": {
+        "lat": 5.420181,
+        "lng": 100.3
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "streetlight-out",
+        "category": "lighting",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a622-7bfb-86d0-79de6b34c1db",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F13",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.490001Z",
+      "title": "Streetlights out",
+      "language": "en",
+      "location": {
+        "lat": 5.42,
+        "lng": 100.3
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "streetlight-out",
+        "category": "lighting",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a5fa-7b34-b574-98f5d551ee4a",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F12",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.450000Z",
+      "title": "Flood water blocking the entrance",
+      "language": "en",
+      "location": {
+        "lat": 5.4,
+        "lng": 100.311353
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a59b-78c6-98e8-517f683d72d2",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F11",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.355001Z",
+      "title": "Air melimpah dari longkang",
+      "language": "ms",
+      "location": {
+        "lat": 5.398734,
+        "lng": 100.311263
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a531-7bc4-ba96-d9c5257ac6df",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F10",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.249001Z",
+      "title": "Flooding near the housing area",
+      "language": "en",
+      "location": {
+        "lat": 5.401357,
+        "lng": 100.31
+      },
+      "storm_flag": true,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a4e2-716a-8d1b-b5cf4ffe8df8",
+      "channel": "sensor-scada",
+      "source_ref": "bandaros-demo-F09",
+      "source_class": "sensor",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.170000Z",
+      "title": "DR-114 overflow warning",
+      "language": null,
+      "location": {
+        "lat": 5.4,
+        "lng": 100.31
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a4a2-72c1-bbfa-c1b48d907fe0",
+      "channel": "sensor-scada",
+      "source_ref": "bandaros-demo-F08",
+      "source_class": "sensor",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.106000Z",
+      "title": "DR-114 level peak",
+      "language": null,
+      "location": {
+        "lat": 5.4,
+        "lng": 100.31
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a458-7dc0-be55-607007f37052",
+      "channel": "sensor-scada",
+      "source_ref": "bandaros-demo-F07",
+      "source_class": "sensor",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:27.032000Z",
+      "title": "DR-114 level still rising",
+      "language": null,
+      "location": {
+        "lat": 5.4,
+        "lng": 100.31
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a41b-7456-91de-e07d53c67a34",
+      "channel": "sensor-scada",
+      "source_ref": "bandaros-demo-F06",
+      "source_class": "sensor",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.971000Z",
+      "title": "DR-114 level high sustained",
+      "language": null,
+      "location": {
+        "lat": 5.4,
+        "lng": 100.31
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a3ce-7c85-b79c-15bfe76fca9a",
+      "channel": "sensor-scada",
+      "source_ref": "bandaros-demo-F05",
+      "source_class": "sensor",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.894001Z",
+      "title": "DR-114 level high",
+      "language": null,
+      "location": {
+        "lat": 5.4,
+        "lng": 100.31
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "flood-drainage",
+        "category": "drainage",
+        "severity_hint": "P1",
+        "in_jurisdiction": true,
+        "zone_id": "island",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → island"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a383-7d14-b198-d2c0f0d2697a",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F04",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.819001Z",
+      "title": "Jalan berlubang dekat pasar",
+      "language": "ms",
+      "location": {
+        "lat": 5.363583,
+        "lng": 100.4666
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "pothole",
+        "category": "roads",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a321-7ab3-a17c-f70a05d03efd",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F03",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.721001Z",
+      "title": "Lubang masih belum dibaiki",
+      "language": "ms",
+      "location": {
+        "lat": 5.364081,
+        "lng": 100.466798
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "pothole",
+        "category": "roads",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a2d7-7d01-b239-ce19d0f54caf",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F02",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.647001Z",
+      "title": "Jalan rosak depan pasar",
+      "language": "ms",
+      "location": {
+        "lat": 5.364171,
+        "lng": 100.4666
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "pothole",
+        "category": "roads",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "01a01d55-a249-7641-ab3b-a667d5eac61d",
+      "channel": "suarakita",
+      "source_ref": "bandaros-demo-F01",
+      "source_class": "citizen",
+      "observed_at": null,
+      "received_at": "2026-08-20T04:02:26.505000Z",
+      "title": "Lubang jalan berhampiran pasar",
+      "language": "ms",
+      "location": {
+        "lat": 5.3639,
+        "lng": 100.4666
+      },
+      "storm_flag": false,
+      "media_count": 0,
+      "enrichment": {
+        "type_id": "pothole",
+        "category": "roads",
+        "severity_hint": "P2",
+        "in_jurisdiction": true,
+        "zone_id": "bukit-mertajam",
+        "agent": {
+          "actor": "svc-jurisdiction-agent",
+          "label": "Jurisdiction Agent",
+          "mode": "rule",
+          "reasoning": [
+            "point-in-polygon: mbpp-boundary → bukit-mertajam"
+          ]
+        }
+      }
+    }
+  ],
+  "next_cursor": null
+}

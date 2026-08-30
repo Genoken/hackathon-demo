@@ -1,0 +1,25 @@
+{
+  "id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+  "intake_seq": 1,
+  "title": "Lubang jalan berhampiran pasar",
+  "description": {
+    "body": null,
+    "language": null,
+    "structured_fields": null
+  },
+  "source": {
+    "channel": "suarakita",
+    "created_by": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402"
+  },
+  "status": "pending",
+  "stage": "intake",
+  "priority_band": "P2",
+  "due_at": "2026-08-22",
+  "labels": [],
+  "arrived_at": "2026-08-20T04:02:26.563000Z",
+  "created_at": "2026-08-20T04:02:26.563000Z",
+  "updated_at": "2026-08-20T04:02:26.563000Z",
+  "close_record": null,
+  "comment_count": 0,
+  "translation_available": false
+}

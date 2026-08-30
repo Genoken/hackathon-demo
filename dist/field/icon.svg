@@ -1,0 +1,6 @@
+<!-- Placeholder app icon — FE-01 scaffold only. packages/ui / FE-02 owns the
+     real BandarOS mark; design/prototype has none checked in yet to port. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BandarOS">
+  <rect width="64" height="64" rx="14" fill="#0b0b0c" />
+  <text x="32" y="43" font-family="system-ui, sans-serif" font-size="30" font-weight="700" fill="#EDEDF2" text-anchor="middle">B</text>
+</svg>

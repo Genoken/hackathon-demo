@@ -1,0 +1,31 @@
+{
+  "item_id": "01a01d55-a7c3-759a-a9fc-729ae2a873f2",
+  "workflow_key": "council-six-v1",
+  "state": "NEW",
+  "status_mapping": "pending",
+  "legal_transitions": [
+    "ROUTED",
+    "RESOLVED"
+  ],
+  "routing": {
+    "department_slug": "roads",
+    "confidence": "high",
+    "needs_routing": false,
+    "corrected": true,
+    "agent": {
+      "actor": "svc-routing-agent",
+      "label": "Routing Agent",
+      "mode": "rule",
+      "reasoning": [
+        "routed to roads by operator correction (CM-F-011 one-tap)",
+        "Carriageway defect — Roads"
+      ]
+    }
+  },
+  "assignment": {
+    "assignee": null,
+    "mode": null,
+    "assigned_at": null
+  },
+  "sla": null
+}

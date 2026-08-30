@@ -1,0 +1,91 @@
+{
+  "order": "priority",
+  "mode": "list",
+  "queue_total": 5,
+  "items": [
+    {
+      "id": "01a01d55-a3e9-707e-adbc-dc43bfec4b60",
+      "intake_seq": 2,
+      "title": "DR-114 level high",
+      "status": "pending",
+      "stage": "intake",
+      "priority_band": "P1",
+      "due_at": "2026-08-20",
+      "labels": [],
+      "source": {
+        "channel": "sensor-scada"
+      },
+      "arrived_at": "2026-08-20T04:02:26.921000Z",
+      "created_at": "2026-08-20T04:02:26.921000Z",
+      "rank_reason": "P1 · due today · #2"
+    },
+    {
+      "id": "01a01d55-a654-7a32-b758-84aa56704ffc",
+      "intake_seq": 3,
+      "title": "Streetlights out",
+      "status": "pending",
+      "stage": "intake",
+      "priority_band": "P2",
+      "due_at": "2026-08-21",
+      "labels": [],
+      "source": {
+        "channel": "suarakita"
+      },
+      "arrived_at": "2026-08-20T04:02:27.540000Z",
+      "created_at": "2026-08-20T04:02:27.540000Z",
+      "rank_reason": "P2 · due 2026-08-21 · #3"
+    },
+    {
+      "id": "01a01d55-a283-7ae2-bd6f-690c241f8a7b",
+      "intake_seq": 1,
+      "title": "Lubang jalan berhampiran pasar",
+      "status": "pending",
+      "stage": "intake",
+      "priority_band": "P2",
+      "due_at": "2026-08-22",
+      "labels": [],
+      "source": {
+        "channel": "suarakita"
+      },
+      "arrived_at": "2026-08-20T04:02:26.563000Z",
+      "created_at": "2026-08-20T04:02:26.563000Z",
+      "rank_reason": "P2 · due 2026-08-22 · #1"
+    },
+    {
+      "id": "01a01d55-a701-7f1a-8789-f380f5f988d0",
+      "intake_seq": 4,
+      "title": "Old furniture dumped by the road",
+      "status": "pending",
+      "stage": "intake",
+      "priority_band": "P2",
+      "due_at": "2026-08-23",
+      "labels": [],
+      "source": {
+        "channel": "suarakita"
+      },
+      "arrived_at": "2026-08-20T04:02:27.713000Z",
+      "created_at": "2026-08-20T04:02:27.713000Z",
+      "rank_reason": "P2 · due 2026-08-23 · #4"
+    },
+    {
+      "id": "01a01d55-a7c3-759a-a9fc-729ae2a873f2",
+      "intake_seq": 5,
+      "title": "Pothole reported by phone",
+      "status": "pending",
+      "stage": "intake",
+      "priority_band": "P3",
+      "due_at": null,
+      "labels": [
+        "demo",
+        "manual-intake"
+      ],
+      "source": {
+        "channel": "manual"
+      },
+      "arrived_at": "2026-08-20T04:02:27.907001Z",
+      "created_at": "2026-08-20T04:02:27.907001Z",
+      "rank_reason": "P3 · no due date · #5"
+    }
+  ],
+  "next_cursor": null
+}

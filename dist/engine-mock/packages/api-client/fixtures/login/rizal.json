@@ -1,0 +1,13 @@
+{
+  "session_id": "oVNIigG1uDn7WqzmPhlcqsD3e65l0ahOzkN0EJu9BIU",
+  "expires_at": "2026-08-20T16:02:28.472000Z",
+  "user": {
+    "id": "01a01d55-a189-732e-b401-7b95db938bae",
+    "kind": "human",
+    "name": "Rizal",
+    "email": "rizal@mbpp.demo",
+    "language": "ms-MY",
+    "timezone": "Asia/Kuala_Lumpur",
+    "is_root_capable": false
+  }
+}

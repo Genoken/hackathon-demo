@@ -1,0 +1,13 @@
+{
+  "mode": "rule",
+  "candidates": [],
+  "agent": {
+    "actor": "svc-assignment-agent",
+    "label": "Assignment Agent",
+    "mode": "rule",
+    "reasoning": [
+      "candidates from lighting via DirectoryProvider",
+      "ranked by availability, round-robin recency, then open load (08 §5a)"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "SETUP_PENDING",
+    "message": "This installation has not completed first-run setup."
+  }
+}

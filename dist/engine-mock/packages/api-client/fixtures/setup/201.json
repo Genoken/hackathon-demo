@@ -1,0 +1,25 @@
+{
+  "session_id": "ES3haa5UgzUdrJecrAIwkDIVQzkIFeMOZqjO7FGWOj8",
+  "expires_at": "2026-08-11T04:53:41.286000Z",
+  "user": {
+    "id": "019fec98-2312-732c-8b16-638c25bc947b",
+    "kind": "human",
+    "name": "MBPP Ops",
+    "email": "ops@mbpp.demo",
+    "language": "en",
+    "timezone": "UTC",
+    "is_root_capable": true
+  },
+  "recovery_codes": [
+    "8ebe41f2db94144d8215d874dd018edf",
+    "d2c85b5740342628270cce5b8e35509a",
+    "4313c4aa9a78df5de80a6cfb81b87a08",
+    "40d58d70aa487b57d78aa265e2792ca1",
+    "1ee604505b80207a506f8fe4e76d9b06",
+    "f992464aedc4c7d5f65a335b11e1dc4d",
+    "fcdd24c75b48085e667616911e98e4c3",
+    "4c805bbb550463f0cf88229047c71eb7",
+    "aa9d41cc721a1a889b6b6cd0bd8eeffb",
+    "e63044e8ee458fabe3cd50c0586a8da6"
+  ]
+}

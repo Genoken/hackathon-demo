@@ -1,0 +1,13 @@
+{
+  "session_id": "lPabnTtjtURw_G97I0NGLh7mMd1D5F3NPPbSls_QsmA",
+  "expires_at": "2026-08-11T05:22:22.455000Z",
+  "user": {
+    "id": "019fec99-6aa4-7359-b362-6f46b03a3928",
+    "kind": "human",
+    "name": "Aishah",
+    "email": "aishah@mbpp.demo",
+    "language": "ms-MY",
+    "timezone": "Asia/Kuala_Lumpur",
+    "is_root_capable": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "outbox_id": "01a01d55-ac7f-7123-a8ae-8b1ec80f9dc2",
+      "item_id": "01a01d55-a7c3-759a-a9fc-729ae2a873f2",
+      "transition": {
+        "workflow_key": "council-six-v1",
+        "from": "ACKNOWLEDGED",
+        "to": "IN_PROGRESS",
+        "at": "2026-08-20T04:02:29.110000Z"
+      },
+      "created_at": "2026-08-20T04:02:29.110Z",
+      "deliveries": []
+    },
+    {
+      "outbox_id": "01a01d55-ac5a-7b3b-acdf-4e62e48249f3",
+      "item_id": "01a01d55-a7c3-759a-a9fc-729ae2a873f2",
+      "transition": {
+        "workflow_key": "council-six-v1",
+        "from": "ASSIGNED",
+        "to": "ACKNOWLEDGED",
+        "at": "2026-08-20T04:02:29.072000Z"
+      },
+      "created_at": "2026-08-20T04:02:29.072Z",
+      "deliveries": []
+    }
+  ],
+  "next_cursor": null
+}

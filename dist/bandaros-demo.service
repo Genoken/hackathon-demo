@@ -1,0 +1,27 @@
+# Install on the VPS:
+#   sudo cp /opt/bandaros-demo/bandaros-demo.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now bandaros-demo
+[Unit]
+Description=BandarOS demo (landing + command centre + field app, recorded fixtures)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=demo
+WorkingDirectory=/opt/bandaros-demo
+ExecStart=/opt/bandaros-demo/start.sh
+Restart=always
+RestartSec=5
+# start.sh runs three node processes and traps on exit; kill the whole group.
+KillMode=control-group
+
+# Hardening — this serves static files and reads one folder of JSON.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/bandaros-demo/logs
+
+[Install]
+WantedBy=multi-user.target

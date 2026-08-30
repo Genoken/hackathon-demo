@@ -1,0 +1,1619 @@
+{
+  "entries": [
+    {
+      "seq": 1,
+      "at": "2026-08-20T04:02:25.011000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "intake",
+      "before": null,
+      "after": {
+        "media": {
+          "cv": {
+            "max_bytes": 12582912,
+            "mime_allow": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ]
+          },
+          "retention": "365d"
+        },
+        "storm": {
+          "default": {
+            "window": "10m",
+            "threshold": 4
+          },
+          "per_channel": {}
+        },
+        "sweeps": {
+          "handoff_catchup": "every:15m"
+        },
+        "ingress": {
+          "rate_limit": {
+            "window": "1m",
+            "max_requests": 60
+          }
+        },
+        "version": 1,
+        "classification": {
+          "llm": {
+            "min_confidence": 0.7
+          },
+          "severity": {
+            "citizen_nudge_min_score": 0.9,
+            "telemetry_nudge_min_score": 2
+          }
+        }
+      },
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "0d016c6a92bd997e176688e17dcccbeb2fb07b143f4829aed66443c2ac2956de"
+    },
+    {
+      "seq": 2,
+      "at": "2026-08-20T04:02:25.017000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "triage",
+      "before": null,
+      "after": {
+        "noise": {
+          "llm": {
+            "min_confidence": 0.7
+          },
+          "keywords": [
+            "promo",
+            "free gift",
+            "klik sini",
+            "menang hadiah"
+          ]
+        },
+        "sweeps": {
+          "handoff_repair": "every:15m",
+          "count_reconcile": "every:1h",
+          "incident_repair": "every:1h"
+        },
+        "verify": {
+          "max_images": 3
+        },
+        "version": 1,
+        "promotion": {
+          "default_due_days": 3,
+          "default_priority_band": 2
+        },
+        "correlation": {
+          "fallback": {
+            "window": "24h",
+            "weights": {
+              "asset": 0,
+              "spatial": 0.5,
+              "semantic": 0.2,
+              "temporal": 0.3
+            },
+            "radius_metres": 150
+          }
+        }
+      },
+      "prev_hash": "0d016c6a92bd997e176688e17dcccbeb2fb07b143f4829aed66443c2ac2956de",
+      "hash": "786921fb094b0fe04f2e201cf2472c29cac0195b96b56dfd337870d01634b784"
+    },
+    {
+      "seq": 3,
+      "at": "2026-08-20T04:02:25.020000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "workmgmt",
+      "before": null,
+      "after": {
+        "sla": {
+          "at_risk_threshold_percent": 25
+        },
+        "sweeps": {
+          "mapping_invariant": "every:15m",
+          "confirmed_unrouted": "every:15m",
+          "satellite_existence": "every:15m",
+          "lost_transition_replay": "every:15m"
+        },
+        "version": 1,
+        "status_return": {
+          "poller": {
+            "interval": "every:30s",
+            "backoff_max": "15m",
+            "max_attempts": 3
+          }
+        }
+      },
+      "prev_hash": "786921fb094b0fe04f2e201cf2472c29cac0195b96b56dfd337870d01634b784",
+      "hash": "fff054512c7ad36c5393ffcc82563e54317e2bc8fc52fabdc0602b475d20de21"
+    },
+    {
+      "seq": 4,
+      "at": "2026-08-20T04:02:25.023000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "org",
+      "before": null,
+      "after": {
+        "version": 1
+      },
+      "prev_hash": "fff054512c7ad36c5393ffcc82563e54317e2bc8fc52fabdc0602b475d20de21",
+      "hash": "8e31a75914bb144b4c6cb1998ca123852c703709172f66d10624d4861458d7b4"
+    },
+    {
+      "seq": 5,
+      "at": "2026-08-20T04:02:25.149000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9cfb-76b8-bfc3-a9f89385c219",
+        "kind": "service",
+        "name": "Intake · SuaraKita",
+        "slug": "svc-intake-suarakita"
+      },
+      "prev_hash": "8e31a75914bb144b4c6cb1998ca123852c703709172f66d10624d4861458d7b4",
+      "hash": "f9816985cfa204e1aba323ae19dadd5f2e57dbf170a0c91f12954d9468a3faee"
+    },
+    {
+      "seq": 6,
+      "at": "2026-08-20T04:02:25.152000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9cfe-7d79-a13a-af021305cbf7",
+        "kind": "service",
+        "name": "Jurisdiction Agent",
+        "slug": "svc-jurisdiction-agent"
+      },
+      "prev_hash": "f9816985cfa204e1aba323ae19dadd5f2e57dbf170a0c91f12954d9468a3faee",
+      "hash": "0714e73ca7328dfc3ae25723c406fca2df2df542a9cc9420a88e0b74629c0654"
+    },
+    {
+      "seq": 7,
+      "at": "2026-08-20T04:02:25.155000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9d01-7428-910b-aafbc96ded96",
+        "kind": "service",
+        "name": "Verify Agent",
+        "slug": "svc-verify-agent"
+      },
+      "prev_hash": "0714e73ca7328dfc3ae25723c406fca2df2df542a9cc9420a88e0b74629c0654",
+      "hash": "bbe5f89e3faa93dbad27a0b0cbeab5aa9b3b989d5974e3b7dfa89a086e46023f"
+    },
+    {
+      "seq": 8,
+      "at": "2026-08-20T04:02:25.157000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9d04-7e47-a54b-e0e3e6ee5402",
+        "kind": "service",
+        "name": "Dedup/Correlate Agent",
+        "slug": "svc-correlate-agent"
+      },
+      "prev_hash": "bbe5f89e3faa93dbad27a0b0cbeab5aa9b3b989d5974e3b7dfa89a086e46023f",
+      "hash": "95db512e5a3717bb232d777df01b3416cb5b9dacddbacfb99d6e40b97c8b4423"
+    },
+    {
+      "seq": 9,
+      "at": "2026-08-20T04:02:25.160000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9d06-78c6-9551-e3f37b94291f",
+        "kind": "service",
+        "name": "Routing Agent",
+        "slug": "svc-routing-agent"
+      },
+      "prev_hash": "95db512e5a3717bb232d777df01b3416cb5b9dacddbacfb99d6e40b97c8b4423",
+      "hash": "22888c095787ad2c9e1e58579175d427d972af42dfcf015b5630d683be56a827"
+    },
+    {
+      "seq": 10,
+      "at": "2026-08-20T04:02:25.163000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "service_identity.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-9d08-7dad-81f0-45d19dbf03d9",
+        "kind": "service",
+        "name": "Assignment Agent",
+        "slug": "svc-assignment-agent"
+      },
+      "prev_hash": "22888c095787ad2c9e1e58579175d427d972af42dfcf015b5630d683be56a827",
+      "hash": "ae743b445fc7a7bd936cee4708917b0b0a60fd740b92174c8b2e630a6dfc6377"
+    },
+    {
+      "seq": 11,
+      "at": "2026-08-20T04:02:25.195000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "pack",
+      "before": {
+        "org": {
+          "version": 1
+        },
+        "intake": {
+          "media": {
+            "cv": {
+              "max_bytes": 12582912,
+              "mime_allow": [
+                "image/jpeg",
+                "image/png",
+                "image/webp"
+              ]
+            },
+            "retention": "365d"
+          },
+          "storm": {
+            "default": {
+              "window": "10m",
+              "threshold": 4
+            },
+            "per_channel": {}
+          },
+          "sweeps": {
+            "handoff_catchup": "every:15m"
+          },
+          "ingress": {
+            "rate_limit": {
+              "window": "1m",
+              "max_requests": 60
+            }
+          },
+          "version": 1,
+          "classification": {
+            "llm": {
+              "min_confidence": 0.7
+            },
+            "severity": {
+              "citizen_nudge_min_score": 0.9,
+              "telemetry_nudge_min_score": 2
+            }
+          }
+        },
+        "triage": {
+          "noise": {
+            "llm": {
+              "min_confidence": 0.7
+            },
+            "keywords": [
+              "promo",
+              "free gift",
+              "klik sini",
+              "menang hadiah"
+            ]
+          },
+          "sweeps": {
+            "handoff_repair": "every:15m",
+            "count_reconcile": "every:1h",
+            "incident_repair": "every:1h"
+          },
+          "verify": {
+            "max_images": 3
+          },
+          "version": 1,
+          "promotion": {
+            "default_due_days": 3,
+            "default_priority_band": 2
+          },
+          "correlation": {
+            "fallback": {
+              "window": "24h",
+              "weights": {
+                "asset": 0,
+                "spatial": 0.5,
+                "semantic": 0.2,
+                "temporal": 0.3
+              },
+              "radius_metres": 150
+            }
+          }
+        },
+        "workmgmt": {
+          "sla": {
+            "at_risk_threshold_percent": 25
+          },
+          "sweeps": {
+            "mapping_invariant": "every:15m",
+            "confirmed_unrouted": "every:15m",
+            "satellite_existence": "every:15m",
+            "lost_transition_replay": "every:15m"
+          },
+          "version": 1,
+          "status_return": {
+            "poller": {
+              "interval": "every:30s",
+              "backoff_max": "15m",
+              "max_attempts": 3
+            }
+          }
+        }
+      },
+      "after": {
+        "org": {
+          "version": 1,
+          "org_template": {
+            "roles": [
+              {
+                "name": "Command Centre Admin",
+                "slug": "t1-command",
+                "scope": "environment",
+                "permissions": [
+                  "intake.signals.read",
+                  "intake.media.read",
+                  "triage.review.decide",
+                  "triage.verify.confirm",
+                  "triage.unmerge",
+                  "triage.incidents.read",
+                  "workmgmt.work.read",
+                  "workmgmt.lane.read",
+                  "workmgmt.outbox.read",
+                  "workmgmt.route.override",
+                  "workmgmt.assign",
+                  "workmgmt.transition.any",
+                  "org.directory.read"
+                ]
+              },
+              {
+                "name": "Department Admin (HOD)",
+                "slug": "t2-hod",
+                "scope": "department",
+                "permissions": [
+                  "workmgmt.work.read",
+                  "workmgmt.lane.read",
+                  "workmgmt.assign",
+                  "workmgmt.transition.any",
+                  "org.directory.read"
+                ]
+              },
+              {
+                "name": "Field Operator",
+                "slug": "t3-field",
+                "scope": "assigned",
+                "permissions": [
+                  "workmgmt.work.read",
+                  "workmgmt.transition.own",
+                  "intake.media.read",
+                  "org.directory.read"
+                ]
+              }
+            ],
+            "version": 1,
+            "departments": [
+              {
+                "name": "Command Centre",
+                "slug": "command-centre"
+              },
+              {
+                "name": "Roads",
+                "slug": "roads"
+              },
+              {
+                "name": "Drainage",
+                "slug": "drainage"
+              },
+              {
+                "name": "Lighting",
+                "slug": "lighting"
+              },
+              {
+                "name": "Enforcement",
+                "slug": "enforcement"
+              },
+              {
+                "name": "Landscape",
+                "slug": "landscape"
+              }
+            ]
+          }
+        },
+        "intake": {
+          "media": {
+            "cv": {
+              "max_bytes": 12582912,
+              "mime_allow": [
+                "image/jpeg",
+                "image/png",
+                "image/webp"
+              ]
+            },
+            "retention": "365d"
+          },
+          "storm": {
+            "default": {
+              "window": "10m",
+              "threshold": 4
+            },
+            "per_channel": {
+              "sensor-scada": {
+                "window": "5m",
+                "threshold": 12
+              }
+            }
+          },
+          "zones": {
+            "island": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    100.18,
+                    5.25
+                  ],
+                  [
+                    100.34,
+                    5.25
+                  ],
+                  [
+                    100.34,
+                    5.47
+                  ],
+                  [
+                    100.24,
+                    5.48
+                  ],
+                  [
+                    100.18,
+                    5.41
+                  ],
+                  [
+                    100.18,
+                    5.25
+                  ]
+                ]
+              ]
+            },
+            "mbpp-boundary": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      100.42,
+                      5.32
+                    ],
+                    [
+                      100.5,
+                      5.32
+                    ],
+                    [
+                      100.5,
+                      5.4
+                    ],
+                    [
+                      100.42,
+                      5.4
+                    ],
+                    [
+                      100.42,
+                      5.32
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      100.18,
+                      5.25
+                    ],
+                    [
+                      100.34,
+                      5.25
+                    ],
+                    [
+                      100.34,
+                      5.47
+                    ],
+                    [
+                      100.24,
+                      5.48
+                    ],
+                    [
+                      100.18,
+                      5.41
+                    ],
+                    [
+                      100.18,
+                      5.25
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "bukit-mertajam": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    100.42,
+                    5.32
+                  ],
+                  [
+                    100.5,
+                    5.32
+                  ],
+                  [
+                    100.5,
+                    5.4
+                  ],
+                  [
+                    100.42,
+                    5.4
+                  ],
+                  [
+                    100.42,
+                    5.32
+                  ]
+                ]
+              ]
+            }
+          },
+          "agents": {
+            "svc-intake-suarakita": {
+              "mode": "rule",
+              "note": "channel adapter ingest + normalize (IN-F-002)",
+              "display": "Intake · SuaraKita"
+            },
+            "svc-jurisdiction-agent": {
+              "mode": "rule",
+              "note": "zone filter against mbpp-boundary (zones.yaml)",
+              "display": "Jurisdiction Agent"
+            }
+          },
+          "assets": {
+            "DR-114": {
+              "label": "DR-114 drainage cell — island catchment",
+              "location": {
+                "lat": 5.4,
+                "lng": 100.31
+              },
+              "asset_class": "scada-drainage",
+              "service_area": {
+                "radius_metres": 400
+              }
+            },
+            "pump-station-gt-07": {
+              "label": "Pump station PS-GT-07 — George Town",
+              "location": {
+                "lat": 5.414,
+                "lng": 100.329
+              },
+              "asset_class": "scada-drainage",
+              "service_area": {
+                "radius_metres": 250
+              }
+            }
+          },
+          "sweeps": {
+            "handoff_catchup": "every:15m"
+          },
+          "ingress": {
+            "rate_limit": {
+              "window": "1m",
+              "max_requests": 60
+            }
+          },
+          "version": 1,
+          "channels": {
+            "hotline": {
+              "class": "B",
+              "adapter": "hotline-form",
+              "enabled": false
+            },
+            "suarakita": {
+              "class": "A",
+              "adapter": "suarakita-inbound",
+              "enabled": true,
+              "endpoint": {
+                "env": "SUARAKITA_API_BASE"
+              },
+              "preserve": [
+                "voice_count",
+                "citizen_priority_score",
+                "consent"
+              ],
+              "rotated_at": "2026-08-20T04:02:25.029000Z",
+              "token_sha256": "5c98f42e333f9f6e36dff0fc9f42351bd2e34b93a0fc9147ab83c553bdca69fa",
+              "status_return": {
+                "endpoint": {
+                  "env": "SUARAKITA_RETURN_URL"
+                },
+                "provider": "suarakita-return",
+                "credential_ref": {
+                  "env": "SUARAKITA_SERVICE_TOKEN"
+                }
+              },
+              "identity_tier_passthrough": true
+            },
+            "sensor-scada": {
+              "class": "C",
+              "adapter": "sensor-webhook",
+              "enabled": true,
+              "fault_type": "sensor-fault",
+              "rotated_at": "2026-08-20T04:02:25.029000Z",
+              "asset_anchor": {
+                "asset_class": "scada-drainage",
+                "asset_ref_field": "sensor_id"
+              },
+              "default_type": "flood-drainage",
+              "token_sha256": "f3531cfd0c9064f18688d0f2e2c86faaa67d6fe085231e75ad796c33b6cdabcf"
+            },
+            "sensor-feeder": {
+              "class": "C",
+              "adapter": "sensor-webhook",
+              "enabled": false,
+              "asset_anchor": {
+                "asset_class": "feeder-lighting",
+                "asset_ref_field": "sensor_id"
+              }
+            }
+          },
+          "classification": {
+            "llm": {
+              "min_confidence": 0.7
+            },
+            "hint_map": {
+              "banjir": "flood-drainage",
+              "pothole": "pothole",
+              "lampu_jalan": "streetlight-out",
+              "device_fault": "sensor-fault",
+              "jalan_berlubang": "pothole",
+              "water_level_high": "flood-drainage"
+            },
+            "severity": {
+              "citizen_nudge_min_score": 0.9,
+              "telemetry_nudge_min_score": 2
+            },
+            "vocabulary": {
+              "types": [
+                {
+                  "id": "pothole",
+                  "label": "Pothole",
+                  "urgency": "routine",
+                  "category": "roads",
+                  "priority": "P2"
+                },
+                {
+                  "id": "streetlight-out",
+                  "label": "Streetlight out",
+                  "urgency": "routine",
+                  "category": "lighting",
+                  "priority": "P2"
+                },
+                {
+                  "id": "flood-drainage",
+                  "label": "Flood / drainage",
+                  "urgency": "emergency",
+                  "category": "drainage",
+                  "priority": "P1"
+                },
+                {
+                  "id": "illegal-parking",
+                  "label": "Illegal parking",
+                  "urgency": "routine",
+                  "category": "enforcement",
+                  "priority": "P2"
+                },
+                {
+                  "id": "illegal-dumping",
+                  "label": "Illegal dumping",
+                  "urgency": "routine",
+                  "category": "waste",
+                  "priority": "P3"
+                },
+                {
+                  "id": "fallen-tree",
+                  "label": "Fallen tree",
+                  "urgency": "urgent",
+                  "category": "landscape",
+                  "priority": "P2"
+                },
+                {
+                  "id": "sensor-fault",
+                  "label": "Sensor fault",
+                  "urgency": "urgent",
+                  "category": "sensor",
+                  "priority": "P1"
+                }
+              ],
+              "categories": [
+                "roads",
+                "lighting",
+                "drainage",
+                "enforcement",
+                "waste",
+                "landscape",
+                "sensor"
+              ],
+              "unknown_type": {
+                "intake": "holding-category"
+              },
+              "noise_categories": [
+                "spam",
+                "off-topic",
+                "out-of-jurisdiction",
+                "joke"
+              ]
+            }
+          },
+          "jurisdiction_zone": "mbpp-boundary"
+        },
+        "triage": {
+          "bands": {
+            "high": 0.8,
+            "medium": 0.55
+          },
+          "noise": {
+            "llm": {
+              "min_confidence": 0.7
+            },
+            "keywords": [
+              "promo",
+              "free gift",
+              "klik sini",
+              "menang hadiah"
+            ]
+          },
+          "storm": {
+            "window": "10m",
+            "min_flagged": 5,
+            "suppressed_medium_floor": 0.45
+          },
+          "agents": {
+            "svc-verify-agent": {
+              "mode": "ai",
+              "note": "CV classify/tag + human confirm — never a verdict",
+              "display": "Verify Agent"
+            },
+            "svc-correlate-agent": {
+              "mode": "ai_assisted",
+              "note": "AI-assisted scoring, rule gates (triage.yaml)",
+              "display": "Dedup/Correlate Agent"
+            }
+          },
+          "sweeps": {
+            "handoff_repair": "every:15m",
+            "count_reconcile": "every:1h",
+            "incident_repair": "every:1h"
+          },
+          "verify": {
+            "max_images": 3
+          },
+          "version": 1,
+          "promotion": {
+            "by_type": {
+              "pothole": {
+                "sla_window": "2d",
+                "default_priority_band": "P2"
+              },
+              "fallen-tree": {
+                "sla_window": "8h",
+                "default_priority_band": "P2"
+              },
+              "sensor-fault": {
+                "sla_window": "4h",
+                "default_priority_band": "P1"
+              },
+              "flood-drainage": {
+                "sla_window": "4h",
+                "default_priority_band": "P1"
+              },
+              "illegal-dumping": {
+                "sla_window": "1d",
+                "default_priority_band": "P3"
+              },
+              "illegal-parking": {
+                "sla_window": "8h",
+                "default_priority_band": "P2"
+              },
+              "streetlight-out": {
+                "sla_window": "1d",
+                "default_priority_band": "P2"
+              }
+            },
+            "default_due_days": 3,
+            "default_priority_band": 2
+          },
+          "categories": [
+            "roads",
+            "lighting",
+            "drainage",
+            "enforcement",
+            "waste",
+            "landscape",
+            "sensor"
+          ],
+          "correlation": {
+            "fallback": {
+              "window": "24h",
+              "weights": {
+                "asset": 0,
+                "spatial": 0.5,
+                "semantic": 0.2,
+                "temporal": 0.3
+              },
+              "strategy": "proximity-only",
+              "radius_metres": 150
+            },
+            "strategy": "weighted-lattice",
+            "by_category": {
+              "roads": {
+                "window": "72h",
+                "weights": {
+                  "asset": 0.1,
+                  "spatial": 0.45,
+                  "semantic": 0.3,
+                  "temporal": 0.15
+                },
+                "radius_metres": 150
+              },
+              "waste": {
+                "window": "48h",
+                "weights": {
+                  "asset": 0,
+                  "spatial": 0.45,
+                  "semantic": 0.35,
+                  "temporal": 0.2
+                },
+                "radius_metres": 200
+              },
+              "sensor": {
+                "window": "6h",
+                "weights": {
+                  "asset": 0.6,
+                  "spatial": 0.1,
+                  "semantic": 0,
+                  "temporal": 0.3
+                },
+                "strategy": "asset-first",
+                "radius_metres": 50
+              },
+              "drainage": {
+                "window": "24h",
+                "weights": {
+                  "asset": 0.4,
+                  "spatial": 0.25,
+                  "semantic": 0.15,
+                  "temporal": 0.2
+                },
+                "radius_metres": 500
+              },
+              "lighting": {
+                "window": "48h",
+                "weights": {
+                  "asset": 0.3,
+                  "spatial": 0.35,
+                  "semantic": 0.2,
+                  "temporal": 0.15
+                },
+                "radius_metres": 100
+              },
+              "landscape": {
+                "window": "24h",
+                "weights": {
+                  "asset": 0,
+                  "spatial": 0.5,
+                  "semantic": 0.25,
+                  "temporal": 0.25
+                },
+                "radius_metres": 100
+              },
+              "enforcement": {
+                "window": "12h",
+                "weights": {
+                  "asset": 0,
+                  "spatial": 0.45,
+                  "semantic": 0.2,
+                  "temporal": 0.35
+                },
+                "radius_metres": 100
+              }
+            }
+          },
+          "dedup_guard": "per_reporter",
+          "trust_weights": {
+            "none": 0.4,
+            "sensor": 1,
+            "shielded": 0.8,
+            "disclosed": 0.8,
+            "solo_escalation_min_weight": 0.6
+          },
+          "noise_categories": [
+            "spam",
+            "off-topic",
+            "out-of-jurisdiction",
+            "joke"
+          ]
+        },
+        "workmgmt": {
+          "sla": {
+            "per_type": {
+              "pothole": {
+                "ack": "4h",
+                "resolve": "2d"
+              },
+              "fallen-tree": {
+                "ack": "1h",
+                "resolve": "8h"
+              },
+              "sensor-fault": {
+                "ack": "30m",
+                "resolve": "4h"
+              },
+              "flood-drainage": {
+                "ack": "30m",
+                "resolve": "4h"
+              },
+              "illegal-dumping": {
+                "ack": "8h",
+                "resolve": "1d"
+              },
+              "illegal-parking": {
+                "ack": "1h",
+                "resolve": "8h"
+              },
+              "streetlight-out": {
+                "ack": "4h",
+                "resolve": "1d"
+              }
+            },
+            "at_risk_threshold_percent": 25
+          },
+          "agents": {
+            "svc-routing-agent": {
+              "mode": "rule",
+              "note": "taxonomy + GOMD-lite lookup (routing.yaml)",
+              "display": "Routing Agent"
+            },
+            "svc-assignment-agent": {
+              "mode": "configurable",
+              "note": "per-dept mode (assignment.yaml); mode recorded on every workmgmt.assigned entry",
+              "display": "Assignment Agent"
+            }
+          },
+          "sweeps": {
+            "mapping_invariant": "every:15m",
+            "confirmed_unrouted": "every:15m",
+            "satellite_existence": "every:15m",
+            "lost_transition_replay": "every:15m"
+          },
+          "routing": {
+            "rules": [
+              {
+                "type": "pothole",
+                "zone": "bukit-mertajam",
+                "route": "roads",
+                "reason": "BM carriageway crew — the Act-1 hero corridor"
+              },
+              {
+                "type": "flood-drainage",
+                "zone": "island",
+                "route": "drainage",
+                "reason": "island drainage cells — SCADA-instrumented catchment (GP-F-007)"
+              },
+              {
+                "type": "pothole",
+                "route": "roads"
+              },
+              {
+                "type": "streetlight-out",
+                "route": "lighting"
+              },
+              {
+                "type": "flood-drainage",
+                "route": "drainage"
+              },
+              {
+                "type": "illegal-parking",
+                "route": "enforcement"
+              },
+              {
+                "type": "illegal-dumping",
+                "route": "enforcement"
+              },
+              {
+                "type": "fallen-tree",
+                "route": "landscape"
+              },
+              {
+                "type": "sensor-fault",
+                "rule_ref": "asset-owner"
+              }
+            ],
+            "zones": [
+              {
+                "id": "bukit-mertajam",
+                "label": "Bukit Mertajam",
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        100.42,
+                        5.32
+                      ],
+                      [
+                        100.5,
+                        5.32
+                      ],
+                      [
+                        100.5,
+                        5.4
+                      ],
+                      [
+                        100.42,
+                        5.4
+                      ],
+                      [
+                        100.42,
+                        5.32
+                      ]
+                    ]
+                  ]
+                }
+              },
+              {
+                "id": "island",
+                "label": "Penang Island",
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        100.18,
+                        5.25
+                      ],
+                      [
+                        100.34,
+                        5.25
+                      ],
+                      [
+                        100.34,
+                        5.47
+                      ],
+                      [
+                        100.24,
+                        5.48
+                      ],
+                      [
+                        100.18,
+                        5.41
+                      ],
+                      [
+                        100.18,
+                        5.25
+                      ]
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rule_refs": {
+              "asset-owner": {
+                "by_asset_class": {
+                  "scada-drainage": "drainage",
+                  "feeder-lighting": "lighting"
+                }
+              }
+            },
+            "needs_routing": {
+              "lane": "needs-routing"
+            },
+            "travel_buffer": {
+              "between": [
+                "bukit-mertajam",
+                "island"
+              ],
+              "minutes": 40
+            }
+          },
+          "version": 1,
+          "workflow": {
+            "key": "council-six-v1",
+            "reopen": {
+              "reason_required": true,
+              "reenter_otherwise": "ROUTED",
+              "reenter_if_assignee": "ASSIGNED"
+            },
+            "states": [
+              {
+                "id": "NEW",
+                "label": "New",
+                "status": "pending"
+              },
+              {
+                "id": "ROUTED",
+                "label": "Routed",
+                "status": "pending"
+              },
+              {
+                "id": "ASSIGNED",
+                "label": "Assigned",
+                "status": "pending"
+              },
+              {
+                "id": "ACKNOWLEDGED",
+                "label": "Acknowledged",
+                "status": "pending"
+              },
+              {
+                "id": "IN_PROGRESS",
+                "label": "In progress",
+                "status": "pending"
+              },
+              {
+                "id": "RESOLVED",
+                "label": "Resolved",
+                "status": "resolved",
+                "terminal": true
+              }
+            ],
+            "version": 1,
+            "transitions": [
+              {
+                "to": "ROUTED",
+                "from": "NEW"
+              },
+              {
+                "to": "ASSIGNED",
+                "from": "ROUTED"
+              },
+              {
+                "to": "ACKNOWLEDGED",
+                "from": "ASSIGNED"
+              },
+              {
+                "to": "IN_PROGRESS",
+                "from": "ACKNOWLEDGED"
+              },
+              {
+                "to": "RESOLVED",
+                "from": "IN_PROGRESS",
+                "requires_attribute": {
+                  "disposition": [
+                    "fixed",
+                    "invalid",
+                    "duplicate",
+                    "out_of_scope"
+                  ]
+                }
+              }
+            ],
+            "direct_close": {
+              "to": "RESOLVED",
+              "from": "any_nonterminal",
+              "requires_attribute": {
+                "disposition": [
+                  "fixed",
+                  "invalid",
+                  "duplicate",
+                  "out_of_scope"
+                ]
+              }
+            },
+            "status_return": [
+              {
+                "on_enter": "ACKNOWLEDGED",
+                "public_label": "Council has acknowledged your report",
+                "public_status": "acknowledged"
+              },
+              {
+                "on_enter": "IN_PROGRESS",
+                "public_label": "A crew has been assigned and work is underway",
+                "public_status": "in_progress"
+              },
+              {
+                "on_enter": "RESOLVED",
+                "public_label": "Resolved — see the outcome",
+                "public_status": "resolved",
+                "carries_proof_facts": true
+              }
+            ]
+          },
+          "assignment": {
+            "factors": {
+              "load": 0.25,
+              "skills": 0.1,
+              "geography": 0.35,
+              "availability": 0.2,
+              "sla_pressure": 0.1
+            },
+            "version": 1,
+            "default_mode": "rule",
+            "by_department": {
+              "roads": "ai_assist"
+            },
+            "travel_buffer_ref": "routing.travel_buffer"
+          },
+          "escalation": {
+            "per_type": {
+              "pothole": {
+                "notify": "t2-hod",
+                "at_percent": 80
+              },
+              "fallen-tree": {
+                "breach": "oversight_flag",
+                "notify": "t2-hod",
+                "at_percent": 80
+              },
+              "sensor-fault": {
+                "breach": "oversight_flag",
+                "notify": "t2-hod",
+                "at_percent": 80
+              },
+              "flood-drainage": {
+                "breach": "oversight_flag",
+                "notify": "t2-hod",
+                "at_percent": 50
+              },
+              "illegal-dumping": {
+                "breach": "notify_t2_hod"
+              },
+              "illegal-parking": {
+                "notify": "t2-hod",
+                "at_percent": 80
+              },
+              "streetlight-out": {
+                "notify": "t2-hod",
+                "at_percent": 80
+              }
+            }
+          },
+          "status_return": {
+            "poller": {
+              "interval": "every:30s",
+              "backoff_max": "15m",
+              "max_attempts": 3
+            }
+          }
+        },
+        "master_data": {
+          "renamed": [],
+          "retired": [],
+          "projected": {
+            "intake": {
+              "renamed": [],
+              "retired": [],
+              "updated": [
+                "holding"
+              ],
+              "inserted": [
+                "roads",
+                "lighting",
+                "drainage",
+                "enforcement",
+                "waste",
+                "landscape",
+                "sensor",
+                "pothole",
+                "streetlight-out",
+                "flood-drainage",
+                "illegal-parking",
+                "illegal-dumping",
+                "fallen-tree",
+                "sensor-fault"
+              ]
+            },
+            "triage": {
+              "renamed": [],
+              "retired": [],
+              "updated": [
+                "holding"
+              ],
+              "inserted": [
+                "roads",
+                "lighting",
+                "drainage",
+                "enforcement",
+                "waste",
+                "landscape",
+                "sensor",
+                "pothole",
+                "streetlight-out",
+                "flood-drainage",
+                "illegal-parking",
+                "illegal-dumping",
+                "fallen-tree",
+                "sensor-fault"
+              ]
+            }
+          }
+        }
+      },
+      "prev_hash": "ae743b445fc7a7bd936cee4708917b0b0a60fd740b92174c8b2e630a6dfc6377",
+      "hash": "3d9bfeec460123541ae5596f0a68113db7fef14058196dbe61d9c675a0722fc0"
+    },
+    {
+      "seq": 12,
+      "at": "2026-08-20T04:02:26.161000Z",
+      "actor": "01a01d55-a0e7-7b52-9a39-08f522fe6645",
+      "root_session_id": null,
+      "kind": "operator.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-a0e7-7b52-9a39-08f522fe6645",
+        "name": "Founder",
+        "email": "founder@mbpp.demo",
+        "is_root_capable": true,
+        "recovery_codes_issued": 10
+      },
+      "prev_hash": "3d9bfeec460123541ae5596f0a68113db7fef14058196dbe61d9c675a0722fc0",
+      "hash": "9e3bac504dc44dc51675c2170a2296422712c4c89df5440ca4cf442028d6b7a3"
+    },
+    {
+      "seq": 13,
+      "at": "2026-08-20T04:02:26.165000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "tenant",
+      "before": null,
+      "after": {
+        "name": "BASE",
+        "default_worklist_order": "priority"
+      },
+      "prev_hash": "9e3bac504dc44dc51675c2170a2296422712c4c89df5440ca4cf442028d6b7a3",
+      "hash": "57b5e6c408df834afd5b1f1e65fee6283e7bffbb1266df4c40be5a751f5bcbac"
+    },
+    {
+      "seq": 14,
+      "at": "2026-08-20T04:02:26.167000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "channels",
+      "before": null,
+      "after": {
+        "registry": [
+          {
+            "channel": "manual",
+            "enabled": true
+          }
+        ]
+      },
+      "prev_hash": "57b5e6c408df834afd5b1f1e65fee6283e7bffbb1266df4c40be5a751f5bcbac",
+      "hash": "c213744e489f71b348f2a58972eca33e7d6495751e71e5916f7272a0b586f0ed"
+    },
+    {
+      "seq": 15,
+      "at": "2026-08-20T04:02:26.170000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "tool_catalogue",
+      "before": null,
+      "after": [],
+      "prev_hash": "c213744e489f71b348f2a58972eca33e7d6495751e71e5916f7272a0b586f0ed",
+      "hash": "cbdbd8ec8957e9ecedaa74a0bd5cdec3bdd32edf33aa9c0cd18eaeb888d81f67"
+    },
+    {
+      "seq": 16,
+      "at": "2026-08-20T04:02:26.173000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "modules",
+      "before": null,
+      "after": {
+        "installed": {},
+        "distribution": null
+      },
+      "prev_hash": "cbdbd8ec8957e9ecedaa74a0bd5cdec3bdd32edf33aa9c0cd18eaeb888d81f67",
+      "hash": "3d7a352851937c3c4ac3891494659fdfe4e1ac997c698a7d17c297b38584f220"
+    },
+    {
+      "seq": 17,
+      "at": "2026-08-20T04:02:26.175000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "attachments",
+      "before": null,
+      "after": {
+        "max_upload_bytes": 26214400,
+        "staged_retention_hours": 24
+      },
+      "prev_hash": "3d7a352851937c3c4ac3891494659fdfe4e1ac997c698a7d17c297b38584f220",
+      "hash": "0509407f028c12bc4e75a04e7958c3c113c89f04576bdfc41ad95aa38847ce4f"
+    },
+    {
+      "seq": 18,
+      "at": "2026-08-20T04:02:26.181000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "translation",
+      "before": null,
+      "after": {
+        "provider": null
+      },
+      "prev_hash": "0509407f028c12bc4e75a04e7958c3c113c89f04576bdfc41ad95aa38847ce4f",
+      "hash": "d26da585940533a795e57c28e2c926b32bb9fb109bb0c99034516acbdeaa12e9"
+    },
+    {
+      "seq": 19,
+      "at": "2026-08-20T04:02:26.307000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "operator.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-a180-758b-84e2-df5075f87cab",
+        "kind": "human",
+        "name": "Aishah",
+        "email": "aishah@mbpp.demo",
+        "disabled_at": null,
+        "is_root_capable": false
+      },
+      "prev_hash": "d26da585940533a795e57c28e2c926b32bb9fb109bb0c99034516acbdeaa12e9",
+      "hash": "90d3b6e2f61ac06848e72e35f8953672df8f87e631a4830fbfcd2a71f02cc7c6"
+    },
+    {
+      "seq": 20,
+      "at": "2026-08-20T04:02:26.310000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "operator.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-a184-74d2-b425-2b1ee4a4c6af",
+        "kind": "human",
+        "name": "Siti",
+        "email": "siti@mbpp.demo",
+        "disabled_at": null,
+        "is_root_capable": false
+      },
+      "prev_hash": "90d3b6e2f61ac06848e72e35f8953672df8f87e631a4830fbfcd2a71f02cc7c6",
+      "hash": "9e074a71dc1ff2dde27349d5dc01fda071bc0c609855b68eebcc06fd77a1f6aa"
+    },
+    {
+      "seq": 21,
+      "at": "2026-08-20T04:02:26.312000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "operator.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+        "kind": "human",
+        "name": "Faizal",
+        "email": "faizal@mbpp.demo",
+        "disabled_at": null,
+        "is_root_capable": false
+      },
+      "prev_hash": "9e074a71dc1ff2dde27349d5dc01fda071bc0c609855b68eebcc06fd77a1f6aa",
+      "hash": "80b10d2befff84a20c0131bc02c50c397d04bd3f1b135229c9da6b2985cf94cd"
+    },
+    {
+      "seq": 22,
+      "at": "2026-08-20T04:02:26.314000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "operator.created",
+      "scope": "operators",
+      "before": null,
+      "after": {
+        "id": "01a01d55-a189-732e-b401-7b95db938bae",
+        "kind": "human",
+        "name": "Rizal",
+        "email": "rizal@mbpp.demo",
+        "disabled_at": null,
+        "is_root_capable": false
+      },
+      "prev_hash": "80b10d2befff84a20c0131bc02c50c397d04bd3f1b135229c9da6b2985cf94cd",
+      "hash": "a93d0cf5394f010bc737cdc41717abe95c8d3a6cda8f54cb613092501ba0b43e"
+    },
+    {
+      "seq": 23,
+      "at": "2026-08-20T04:02:26.329000Z",
+      "actor": null,
+      "root_session_id": null,
+      "kind": "config.changed",
+      "scope": "pack",
+      "before": {
+        "tenant": {
+          "name": "BASE",
+          "default_worklist_order": "priority"
+        },
+        "modules": {
+          "installed": {},
+          "distribution": null
+        },
+        "channels": {
+          "registry": [
+            {
+              "channel": "manual",
+              "enabled": true
+            }
+          ]
+        }
+      },
+      "after": {
+        "tenant": {
+          "name": "BASE",
+          "default_locale": "ms-MY",
+          "default_timezone": "Asia/Kuala_Lumpur",
+          "default_worklist_order": "priority"
+        },
+        "modules": {
+          "pack": {
+            "id": "pack-bandaros",
+            "version": "0.1.0",
+            "applied_at": "2026-08-20T04:02:26.285000Z"
+          },
+          "installed": {},
+          "distribution": null
+        },
+        "channels": {
+          "registry": [
+            {
+              "channel": "manual",
+              "enabled": true
+            },
+            {
+              "channel": "suarakita",
+              "enabled": true
+            },
+            {
+              "channel": "sensor-scada",
+              "enabled": true
+            },
+            {
+              "channel": "hotline",
+              "enabled": false
+            },
+            {
+              "channel": "sensor-feeder",
+              "enabled": false
+            }
+          ]
+        }
+      },
+      "prev_hash": "a93d0cf5394f010bc737cdc41717abe95c8d3a6cda8f54cb613092501ba0b43e",
+      "hash": "dad4691741fdb0f934e569f9f547ea29e6081e2f4d9ddac76971214c958ac937"
+    },
+    {
+      "seq": 24,
+      "at": "2026-08-20T04:02:30.272000Z",
+      "actor": "01a01d55-a0e7-7b52-9a39-08f522fe6645",
+      "root_session_id": "01a01d55-b0d7-7dd0-874a-ee1018ee3969",
+      "kind": "root.entered",
+      "scope": "platform",
+      "before": null,
+      "after": {
+        "elevated_until": "2026-08-20T04:17:30.270000Z"
+      },
+      "prev_hash": "dad4691741fdb0f934e569f9f547ea29e6081e2f4d9ddac76971214c958ac937",
+      "hash": "1d0974d15cafca37a9c64ff158616d985a7f4b29d8a4facdffc74bf0d77b7cce"
+    }
+  ],
+  "next_cursor": null
+}

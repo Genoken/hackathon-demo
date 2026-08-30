@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "TRANSLATION_UNAVAILABLE",
+    "message": "No translation provider is configured."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "department": {
+    "slug": "roads",
+    "name": "Roads"
+  },
+  "members": [
+    {
+      "user_id": "01a01d55-a186-70c6-8f84-c9958bbecc86",
+      "name": "Faizal",
+      "role": {
+        "slug": "t3-field",
+        "name": "Field Operator"
+      },
+      "tier": "T3",
+      "available_now": true
+    },
+    {
+      "user_id": "01a01d55-a189-732e-b401-7b95db938bae",
+      "name": "Rizal",
+      "role": {
+        "slug": "t3-field",
+        "name": "Field Operator"
+      },
+      "tier": "T3",
+      "available_now": true
+    },
+    {
+      "user_id": "01a01d55-a184-74d2-b425-2b1ee4a4c6af",
+      "name": "Siti",
+      "role": {
+        "slug": "t2-hod",
+        "name": "Department Admin (HOD)"
+      },
+      "tier": "T2",
+      "available_now": true
+    }
+  ],
+  "next_cursor": null
+}

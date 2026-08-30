@@ -1,0 +1,43 @@
+{
+  "item": {
+    "id": "019feca2-33a0-7b86-82bf-17abc54ec915",
+    "intake_seq": 1,
+    "title": "Pothole on Jalan Bukit outside SK Bukit Mertajam",
+    "description": {
+      "body": "Deep pothole, cars swerving into the bike lane.",
+      "language": "en",
+      "structured_fields": null
+    },
+    "source": {
+      "channel": "manual",
+      "created_by": "019fec99-6a35-79ff-91c2-336675d33d3b"
+    },
+    "status": "pending",
+    "stage": "intake",
+    "priority_band": "P1",
+    "due_at": "2026-08-10",
+    "labels": [],
+    "arrived_at": "2026-08-10T17:04:40.864001Z",
+    "created_at": "2026-08-10T17:04:40.864001Z",
+    "updated_at": "2026-08-10T17:04:40.864001Z",
+    "close_record": null
+  },
+  "timeline_entry": {
+    "seq": 1,
+    "type": "item.created",
+    "actor": "019fec99-6a35-79ff-91c2-336675d33d3b",
+    "at": "2026-08-10T17:04:40.867000Z",
+    "payload": {
+      "title": "Pothole on Jalan Bukit outside SK Bukit Mertajam",
+      "due_at": "2026-08-10",
+      "labels": [],
+      "source": "manual",
+      "arrived_at": "2026-08-10T17:04:40.864001Z",
+      "priority_band": 1,
+      "description_lang": "en",
+      "description_sha256": "7da1d6a71f7fb8c28d5bcc2e81d49683d0c2c817c998d2bb33d484b7d1ef2535"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "93796dcc924b390cf189c4680b738e4fd9d1efe1fc31e0dfe81f191388345321"
+  }
+}

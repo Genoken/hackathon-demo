@@ -1,0 +1,9 @@
+{
+  "error": {
+    "code": "MALFORMED_REQUEST",
+    "message": "Too small: expected array to have >=1 items",
+    "details": {
+      "field": "/item_ids"
+    }
+  }
+}

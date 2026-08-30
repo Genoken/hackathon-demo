@@ -1,0 +1,282 @@
+{
+  "namespace": "triage",
+  "version": 2,
+  "doc": {
+    "bands": {
+      "high": 0.8,
+      "medium": 0.55
+    },
+    "noise": {
+      "llm": {
+        "min_confidence": 0.7
+      },
+      "keywords": [
+        "promo",
+        "free gift",
+        "klik sini",
+        "menang hadiah"
+      ]
+    },
+    "storm": {
+      "window": "10m",
+      "min_flagged": 5,
+      "suppressed_medium_floor": 0.45
+    },
+    "agents": {
+      "svc-verify-agent": {
+        "mode": "ai",
+        "note": "CV classify/tag + human confirm — never a verdict",
+        "display": "Verify Agent"
+      },
+      "svc-correlate-agent": {
+        "mode": "ai_assisted",
+        "note": "AI-assisted scoring, rule gates (triage.yaml)",
+        "display": "Dedup/Correlate Agent"
+      }
+    },
+    "sweeps": {
+      "handoff_repair": "every:15m",
+      "count_reconcile": "every:1h",
+      "incident_repair": "every:1h"
+    },
+    "verify": {
+      "max_images": 3
+    },
+    "version": 1,
+    "promotion": {
+      "by_type": {
+        "pothole": {
+          "sla_window": "2d",
+          "default_priority_band": "P2"
+        },
+        "fallen-tree": {
+          "sla_window": "8h",
+          "default_priority_band": "P2"
+        },
+        "sensor-fault": {
+          "sla_window": "4h",
+          "default_priority_band": "P1"
+        },
+        "flood-drainage": {
+          "sla_window": "4h",
+          "default_priority_band": "P1"
+        },
+        "illegal-dumping": {
+          "sla_window": "1d",
+          "default_priority_band": "P3"
+        },
+        "illegal-parking": {
+          "sla_window": "8h",
+          "default_priority_band": "P2"
+        },
+        "streetlight-out": {
+          "sla_window": "1d",
+          "default_priority_band": "P2"
+        }
+      },
+      "default_due_days": 3,
+      "default_priority_band": 2
+    },
+    "categories": [
+      "roads",
+      "lighting",
+      "drainage",
+      "enforcement",
+      "waste",
+      "landscape",
+      "sensor"
+    ],
+    "correlation": {
+      "fallback": {
+        "window": "24h",
+        "weights": {
+          "asset": 0,
+          "spatial": 0.5,
+          "semantic": 0.2,
+          "temporal": 0.3
+        },
+        "strategy": "proximity-only",
+        "radius_metres": 150
+      },
+      "strategy": "weighted-lattice",
+      "by_category": {
+        "roads": {
+          "window": "72h",
+          "weights": {
+            "asset": 0.1,
+            "spatial": 0.45,
+            "semantic": 0.3,
+            "temporal": 0.15
+          },
+          "radius_metres": 150
+        },
+        "waste": {
+          "window": "48h",
+          "weights": {
+            "asset": 0,
+            "spatial": 0.45,
+            "semantic": 0.35,
+            "temporal": 0.2
+          },
+          "radius_metres": 200
+        },
+        "sensor": {
+          "window": "6h",
+          "weights": {
+            "asset": 0.6,
+            "spatial": 0.1,
+            "semantic": 0,
+            "temporal": 0.3
+          },
+          "strategy": "asset-first",
+          "radius_metres": 50
+        },
+        "drainage": {
+          "window": "24h",
+          "weights": {
+            "asset": 0.4,
+            "spatial": 0.25,
+            "semantic": 0.15,
+            "temporal": 0.2
+          },
+          "radius_metres": 500
+        },
+        "lighting": {
+          "window": "48h",
+          "weights": {
+            "asset": 0.3,
+            "spatial": 0.35,
+            "semantic": 0.2,
+            "temporal": 0.15
+          },
+          "radius_metres": 100
+        },
+        "landscape": {
+          "window": "24h",
+          "weights": {
+            "asset": 0,
+            "spatial": 0.5,
+            "semantic": 0.25,
+            "temporal": 0.25
+          },
+          "radius_metres": 100
+        },
+        "enforcement": {
+          "window": "12h",
+          "weights": {
+            "asset": 0,
+            "spatial": 0.45,
+            "semantic": 0.2,
+            "temporal": 0.35
+          },
+          "radius_metres": 100
+        }
+      }
+    },
+    "dedup_guard": "per_reporter",
+    "trust_weights": {
+      "none": 0.4,
+      "sensor": 1,
+      "shielded": 0.8,
+      "disclosed": 0.8,
+      "solo_escalation_min_weight": 0.6
+    },
+    "noise_categories": [
+      "spam",
+      "off-topic",
+      "out-of-jurisdiction",
+      "joke"
+    ]
+  },
+  "updated_at": "2026-08-20T04:02:25.145000Z",
+  "updated_by": null,
+  "pack_authored_keys": [
+    "agents.svc-correlate-agent.display",
+    "agents.svc-correlate-agent.mode",
+    "agents.svc-correlate-agent.note",
+    "agents.svc-verify-agent.display",
+    "agents.svc-verify-agent.mode",
+    "agents.svc-verify-agent.note",
+    "bands.high",
+    "bands.medium",
+    "categories",
+    "correlation.by_category.drainage.radius_metres",
+    "correlation.by_category.drainage.weights.asset",
+    "correlation.by_category.drainage.weights.semantic",
+    "correlation.by_category.drainage.weights.spatial",
+    "correlation.by_category.drainage.weights.temporal",
+    "correlation.by_category.drainage.window",
+    "correlation.by_category.enforcement.radius_metres",
+    "correlation.by_category.enforcement.weights.asset",
+    "correlation.by_category.enforcement.weights.semantic",
+    "correlation.by_category.enforcement.weights.spatial",
+    "correlation.by_category.enforcement.weights.temporal",
+    "correlation.by_category.enforcement.window",
+    "correlation.by_category.landscape.radius_metres",
+    "correlation.by_category.landscape.weights.asset",
+    "correlation.by_category.landscape.weights.semantic",
+    "correlation.by_category.landscape.weights.spatial",
+    "correlation.by_category.landscape.weights.temporal",
+    "correlation.by_category.landscape.window",
+    "correlation.by_category.lighting.radius_metres",
+    "correlation.by_category.lighting.weights.asset",
+    "correlation.by_category.lighting.weights.semantic",
+    "correlation.by_category.lighting.weights.spatial",
+    "correlation.by_category.lighting.weights.temporal",
+    "correlation.by_category.lighting.window",
+    "correlation.by_category.roads.radius_metres",
+    "correlation.by_category.roads.weights.asset",
+    "correlation.by_category.roads.weights.semantic",
+    "correlation.by_category.roads.weights.spatial",
+    "correlation.by_category.roads.weights.temporal",
+    "correlation.by_category.roads.window",
+    "correlation.by_category.sensor.radius_metres",
+    "correlation.by_category.sensor.strategy",
+    "correlation.by_category.sensor.weights.asset",
+    "correlation.by_category.sensor.weights.semantic",
+    "correlation.by_category.sensor.weights.spatial",
+    "correlation.by_category.sensor.weights.temporal",
+    "correlation.by_category.sensor.window",
+    "correlation.by_category.waste.radius_metres",
+    "correlation.by_category.waste.weights.asset",
+    "correlation.by_category.waste.weights.semantic",
+    "correlation.by_category.waste.weights.spatial",
+    "correlation.by_category.waste.weights.temporal",
+    "correlation.by_category.waste.window",
+    "correlation.fallback.radius_metres",
+    "correlation.fallback.strategy",
+    "correlation.fallback.weights.asset",
+    "correlation.fallback.weights.semantic",
+    "correlation.fallback.weights.spatial",
+    "correlation.fallback.weights.temporal",
+    "correlation.fallback.window",
+    "correlation.strategy",
+    "dedup_guard",
+    "noise.keywords",
+    "noise.llm.min_confidence",
+    "noise_categories",
+    "promotion.by_type.fallen-tree.default_priority_band",
+    "promotion.by_type.fallen-tree.sla_window",
+    "promotion.by_type.flood-drainage.default_priority_band",
+    "promotion.by_type.flood-drainage.sla_window",
+    "promotion.by_type.illegal-dumping.default_priority_band",
+    "promotion.by_type.illegal-dumping.sla_window",
+    "promotion.by_type.illegal-parking.default_priority_band",
+    "promotion.by_type.illegal-parking.sla_window",
+    "promotion.by_type.pothole.default_priority_band",
+    "promotion.by_type.pothole.sla_window",
+    "promotion.by_type.sensor-fault.default_priority_band",
+    "promotion.by_type.sensor-fault.sla_window",
+    "promotion.by_type.streetlight-out.default_priority_band",
+    "promotion.by_type.streetlight-out.sla_window",
+    "storm.min_flagged",
+    "storm.suppressed_medium_floor",
+    "storm.window",
+    "trust_weights.disclosed",
+    "trust_weights.none",
+    "trust_weights.sensor",
+    "trust_weights.shielded",
+    "trust_weights.solo_escalation_min_weight",
+    "version"
+  ]
+}

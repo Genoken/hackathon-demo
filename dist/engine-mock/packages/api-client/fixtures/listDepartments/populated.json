@@ -1,0 +1,47 @@
+{
+  "departments": [
+    {
+      "id": "77622f07-0e11-49bd-8726-cf1f95ff2358",
+      "slug": "command-centre",
+      "name": "Command Centre",
+      "parent_id": null,
+      "member_count": 1
+    },
+    {
+      "id": "44ac2bd3-7ec5-4cda-9039-eca247ae7751",
+      "slug": "drainage",
+      "name": "Drainage",
+      "parent_id": null,
+      "member_count": 0
+    },
+    {
+      "id": "8d7b2d99-9a62-453a-8887-dc6c8cb90eb2",
+      "slug": "enforcement",
+      "name": "Enforcement",
+      "parent_id": null,
+      "member_count": 0
+    },
+    {
+      "id": "44a5b330-0273-4c63-bcbb-a891d81e7084",
+      "slug": "landscape",
+      "name": "Landscape",
+      "parent_id": null,
+      "member_count": 0
+    },
+    {
+      "id": "2eb7a71b-560c-4408-b5eb-e63e419a8758",
+      "slug": "lighting",
+      "name": "Lighting",
+      "parent_id": null,
+      "member_count": 0
+    },
+    {
+      "id": "3a60e462-39e7-4486-8464-d49b3aad2b41",
+      "slug": "roads",
+      "name": "Roads",
+      "parent_id": null,
+      "member_count": 3
+    }
+  ],
+  "next_cursor": null
+}
