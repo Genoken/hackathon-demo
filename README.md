@@ -15,6 +15,21 @@ Both run on the same recorded morning, so what one desk does shows up on the oth
 
 ---
 
+## Demo video
+
+**2 minutes 36 seconds** — the whole journey, from a resident reporting a
+pothole to a crew closing it.
+
+[![Watch the demo](docs/video-poster.jpg)](demo-video/RakyatAI-Hackathon-Demo.mp4)
+
+▶ **[demo-video/RakyatAI-Hackathon-Demo.mp4](demo-video/RakyatAI-Hackathon-Demo.mp4)** · 1080p · 30 MB
+
+The file is stored in Git LFS. On GitHub, click through and press download —
+the browser will not play it inline. Locally, `git lfs pull` first if you cloned
+without LFS, otherwise you get a one-line text file instead of a video.
+
+---
+
 ## Screenshots
 
 **The worklist.** Everything open in the council, most urgent first. Reports
@@ -73,7 +88,7 @@ no database on the machine — that is what makes the folder portable.
 ## Before you start
 
 - **Node 24 or newer** (`node --version`)
-- **[Git LFS](https://git-lfs.com)** — the submission PDFs are stored with it
+- **[Git LFS](https://git-lfs.com)** — the demo video and the submission PDFs are stored with it
 - Ports `8080`, `8081`, `8082`, `4000`, `4010` free
 
 Install Git LFS once per machine, then once per user:
@@ -90,8 +105,8 @@ git clone <this-repo>
 cd hackathon-demo
 ```
 
-If you installed Git LFS first, the PDFs come down with the clone. If you did
-not, fetch them now:
+If you installed Git LFS first, the video and PDFs come down with the clone. If
+you did not, fetch them now:
 
 ```bash
 git lfs install && git lfs pull
@@ -129,10 +144,14 @@ New to it? The landing page links a one-page guide on what to click.
 
 ## Submission material
 
-`submission-material/` holds the application deck and the technical architecture
-document. Both are PDFs kept in Git LFS, so a clone without LFS leaves you two
-small text files that begin `version https://git-lfs.github.com/...` instead of
-the real documents. `git lfs pull` fixes that.
+| Where | What |
+|---|---|
+| `demo-video/` | The 2:36 walkthrough, 1080p MP4 |
+| `submission-material/` | The application deck and the technical architecture document, as PDFs |
+
+All three are kept in Git LFS. A clone without LFS leaves you small text files
+that begin `version https://git-lfs.github.com/...` instead of the real ones.
+`git lfs pull` fixes that.
 
 The demo itself does not need LFS — everything in `dist/` is a normal file.
 
@@ -167,7 +186,7 @@ the firewall rules, and HTTPS behind Caddy.
 | `port 8081 is already in use` | Free the port, or set `PORTAL_PORT` and friends |
 | `stack did not come up` | Read `dist/logs/{mock,bff,serve}.log` |
 | A screen says `MOCK_FIXTURE_MISSING` | You stepped off the recorded path — go back and follow the guide |
-| A PDF opens as one line of text | Git LFS was not installed when you cloned — run `git lfs install && git lfs pull` |
+| A PDF or the video opens as one line of text | Git LFS was not installed when you cloned — run `git lfs install && git lfs pull` |
 
 Running as a service? `journalctl -u bandaros-demo -f`.
 
