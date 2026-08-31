@@ -20,13 +20,14 @@ Both run on the same recorded morning, so what one desk does shows up on the oth
 **2 minutes 36 seconds** — the whole journey, from a resident reporting a
 pothole to a crew closing it.
 
-[![Watch the demo](docs/video-poster.jpg)](demo-video/RakyatAI-Hackathon-Demo.mp4)
+[![Watch the demo](docs/video-poster.jpg)](https://youtu.be/OlUe0UkF_eQ)
 
-▶ **[demo-video/RakyatAI-Hackathon-Demo.mp4](demo-video/RakyatAI-Hackathon-Demo.mp4)** · 1080p · 30 MB
+▶ **[Watch on YouTube](https://youtu.be/OlUe0UkF_eQ)** — nothing to download.
 
-The file is stored in Git LFS. On GitHub, click through and press download —
-the browser will not play it inline. Locally, `git lfs pull` first if you cloned
-without LFS, otherwise you get a one-line text file instead of a video.
+Prefer the original file? [`demo-video/RakyatAI-Hackathon-Demo.mp4`](demo-video/RakyatAI-Hackathon-Demo.mp4)
+is the same video at 1080p, 30 MB, kept in Git LFS. GitHub will not play it in
+the browser, so click through and download it. Locally, run `git lfs pull` first
+if you cloned without LFS, otherwise you get a one-line text file.
 
 ---
 
@@ -146,7 +147,7 @@ New to it? The landing page links a one-page guide on what to click.
 
 | Where | What |
 |---|---|
-| `demo-video/` | The 2:36 walkthrough, 1080p MP4 |
+| `demo-video/` | The 2:36 walkthrough, 1080p MP4 — also on [YouTube](https://youtu.be/OlUe0UkF_eQ) |
 | `submission-material/` | The application deck and the technical architecture document, as PDFs |
 
 All three are kept in Git LFS. A clone without LFS leaves you small text files
